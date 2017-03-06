@@ -1,5 +1,5 @@
 img {
-    height: 400px;
+    height: 500px;
     width: 1200px;
 }
 
@@ -116,14 +116,14 @@ img {
 
 body {
     background-color: #000000;
-    font-family: 'Sansita', sans-serif;;
-
-
+    font-family: 'Sansita', sans-serif;
 }
-#main{
-  padding-top: 30px;
+
+#main {
+    padding-top: 31px;
 }
-.fa.fa-play-circle{
-  font-size:48px;
-  color:red;
+
+.fa.fa-play-circle {
+    font-size: 48px;
+    color: red;
 }
