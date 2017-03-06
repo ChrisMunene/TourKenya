@@ -22,6 +22,6 @@ $(document).ready(function() {
     });
 
 
-    
+    var fairmont =  document.querySelector("#frmara");
 
 });
