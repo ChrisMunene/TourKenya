@@ -21,7 +21,9 @@ $(document).ready(function() {
         clickEvent = false;
     });
 
-
+//target element
     var fairmont =  document.querySelector("#frmara");
-
+//initial rating
+    var currentRating = 0;
+    
 });
