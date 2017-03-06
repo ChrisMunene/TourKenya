@@ -3,13 +3,13 @@
 
 <head>
     <link href="styling/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="styling/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
     <link href="styling/style.css" rel="stylesheet" type="text/css">
     <link href="styling/style1.css" rel="stylesheet" type="text/css">
     <link href="styling/butns.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Sansita|Baloo" rel="stylesheet">
     <script src="js\jquery-3.1.1.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
     <script src="js\bootstrap.min.js"></script>
     <script src="js/npm.js"></script>
     <script src="js/jquery.smoothState.min.js"></script>
@@ -20,13 +20,53 @@
 </head>
 
 <body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="accomodation.html">Accomodation</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="transport.html">Transport</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#drinks">Booking</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#menu">Reviews</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#reviews">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#subscribe">Subscribe</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <br>
     <div class="m-page scene_element scene_element--fadeinup" id="main">
 
         <div id="uber-bar">
-            <img src="img/logo.png" alt="logo of the company" id="logo">UBER MOVIES
+            <img src="icon/flag2.png" alt="logo of the company" id="logo">TourKenya
         </div>
 
-        <h2 class="header_underline">Check out our range of movies</h2>
+        <h2 class="header_1">Convenience And Quality Service Brought To You.</h2>
         <div class="container">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
@@ -34,7 +74,7 @@
                 <div class="carousel-inner">
 
                     <div class="item active">
-                        <img src="img/cr1.jpg">
+                        <img src="assets/beach.jpg">
                         <div class="carousel-caption">
                             <p class="carousel_info_light">SummerSlam is one of the WWE's biggest shows of the year and the expectations are high going into the event.</p>
                         </div>
@@ -42,7 +82,7 @@
                     <!-- End Item -->
 
                     <div class="item">
-                        <img src="img/cr2.jpg">
+                        <img src="assets/getaway.jpg">
                         <div class="carousel-caption">
                             <p class="carousel_info_light">It’s just too much. There’s so much plot here, and so many extraneous effects, that the real spookiness at the movie’s heart is obscured.</p>
                         </div>
@@ -50,7 +90,7 @@
                     <!-- End Item -->
 
                     <div class="item">
-                        <img src="img/cr3.jpg">
+                        <img src="assets/outside.jpg">
                         <div class="carousel-caption">
                             <p class="carousel_info_dark">"Deadpool is a feverishly eager-to-please comic-book movie about a super-villain who suits up like a superhero." - NY Times</p>
                         </div>
@@ -58,7 +98,7 @@
                     <!-- End Item -->
 
                     <div class="item">
-                        <img src="img/cr4.jpg">
+                        <img src="assets/pool.jpg">
                         <div class="carousel-caption">
                             <p class="carousel_info_light">Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists the help of his newfound ally, Diana Prince, to face an even greater enemy.
                             </p>
@@ -69,7 +109,7 @@
 
 
                     <div class="item">
-                        <img src="img/cr5.jpg">
+                        <img src="assets/swimming2.jpg">
                         <div class="carousel-caption">
                             <p class="carousel_info_light">"Arrival is a smart tale of alien contact that boasts great visuals and performances, if also more brains than heart." - Sandy Schaefer</p>
                         </div>
@@ -78,7 +118,7 @@
 
 
                     <div class="item">
-                        <img src="img/cr6.jpg">
+                        <img src="assets/beach.jpg">
                         <div class="carousel-caption">
                             <p class="carousel_info_light">British forces embark on a mission to evacuate Allied troops from Dunkirk, France, in 1940.</p>
                         </div>
@@ -87,7 +127,7 @@
 
 
                     <div class="item">
-                        <img src="img/cr7.jpg">
+                        <img src="assets/surfing2.jpg">
                         <div class="carousel-caption">
                             <p class="carousel_info_light">"There's a great Tarzan adventure somewhere in Legend of Tarzan!" - IBM</p>
                         </div>
@@ -96,7 +136,7 @@
 
 
                     <div class="item">
-                        <img src="img/cr8.jpg">
+                        <img src="assets/outside.jpg">
                         <div class="carousel-caption">
                             <p class="carousel_info_dark">Strait-laced parents meet their daughter’s hipster boyfriend in an enjoyable romp with whiplash comic timing.</p>
                         </div>
@@ -105,7 +145,7 @@
 
 
                     <div class="item">
-                        <img src="img/cr9.png">
+                        <img src="assets/scuba2.jpg">
                         <div class="carousel-caption">
                             <p class="carousel_info_light">Just like the theme park ride that inspired it, the movie's greatest strengths are its atmosphere and art direction</p>
                         </div>
@@ -131,109 +171,17 @@
             </div>
             <!-- End Carousel -->
         </div>
-
-        <a href="home.html" class="button border-purple rounded gradient-blue" data-toggle="modal" data-target="#modalTicketing" id="ticket">Get your ticket</a>
-
     </div>
-
-    <div id="modalTicketing" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title" style="text-align-last: center">Movies+Tickets</h4>
-                </div>
-                <div class="modal-body">
-
-
-                    <div id="legobatman" class="movie_info">
-                        <img src="img\lg1.png" alt="poster" class="image_poster">
-                        <p>In the irreverent spirit of fun that made "The LEGO® Movie" a worldwide phenomenon, the self-described leading man of that ensemble - LEGO Batman - stars in his own big-screen adventure.</p>
-                    </div>
-
-                    <div id="cars3" class="movie_info">
-                        <img src="img\cars3.png" alt="poster" class="image_poster">
-                        <p>Cars 3 is an upcoming American 3D computer-animated sports comedy-drama film produced by Pixar Animation Studios and released by Walt Disney Pictures.</p>
-                    </div>
-
-                    <div id="moana" class="movie_info">
-                        <img src="img\moana.jpg" alt="poster" class="image_poster">
-                        <p>The epic journey continues for "Moana" fans as Walt Disney Animation Studios introduces an all-new sing-along version of the hit, critically-lauded comedy-adventure "Moana".</p>
-                    </div>
-
-                    <div id="fd" class="movie_info">
-                        <img src="img\fd.jpg" alt="poster" class="image_poster">
-                        <p>Disney Pixar's "Finding Dory" welcomes back to the big screen everyone's favorite forgetful blue tang Dory, who's living happily in the reef with Marlin and Nemo. When Dory suddenly remembers that she has a family out there who
-                            may be looking for her, the trio takes off on a life-changing adventure.</p>
-                    </div>
-
-
-
-
-                    <p>Choose the type of movie you would like to watch</p>
-                    <select name="release" required id="release">
-                        <option name="selectedMovie" value="ex" selected="selected">Exclusive (Latest)</option>
-                        <option name="selectedMovie" value="nonex">Non exclusive (Earlier releases)</option>
-                    </select>
-
-
-                    <p id="label-g">Please select a genre</p>
-                    <select name="genre" required id="genre">
-                        <option data-id="ex" value="animationnew" selected="selected">Animation</option>
-                        <option data-id="ex" value="fantasynew">Fantasy</option>
-                        <option data-id="ex" value="actionnew">Action</option>
-                        <option data-id="nonex" value="animationold">Animation (non-exclusive)</option>
-                        <option data-id="nonex" value="fantasyold">Fantasy (non-exclusive)</option>
-                        <option data-id="nonex" value="actionold">Action (non-exclusive)</option>
-                    </select>
-
-                    <p id="label-m">Please select a movie</p>
-                    <select name="movies" required id="movies">
-                        <option data-id="animationnew" value="legobatman" selected="selected">Lego Batman</option>
-                        <option data-id="animationnew" value="cars3">Cars 3</option>
-                        <option data-id="animationnew" value="moana">Moana</option>
-                        <option data-id="animationnew" value="fd">Finding Dory</option>
-                        <option data-id="fantasynew" value="bb">Beauty and The Beast</option>
-                        <option data-id="fantasynew" value="aw">Alice in Wonderland</option>
-                        <option data-id="fantasynew" value="passengers">Passengers</option>
-                        <option data-id="fantasynew" value="fbw">Fantastic Beasts and Where to Find Them</option>
-                        <option data-id="actionnew" value="bvs">Batman Vs Superman</option>
-                        <option data-id="actionnew" value="civil">Captain America: Civil War</option>
-                        <option data-id="actionnew" value="thor">THOR:Ragnarok</option>
-                        <option data-id="actionnew" value="jla">Justice League</option>
-                        <option data-id="animationold" value="tlk">The Lion King</option>
-                        <option data-id="animationold" value="fla">Flushed Away</option>
-                        <option data-id="animationold" value="oth">Over The Hedge</option>
-                        <option data-id="animationold" value="mh">Monster House</option>
-                        <option data-id="fantasyold" value="hp">Harry Potter And Th Deathly Hallows:Part II</option>
-                        <option data-id="fantasyold" value="pj">Percy Jackson And The Lightning Thief</option>
-                        <option data-id="fantasyold" value="tbfg">The BFG</option>
-                        <option data-id="fantasyold" value="wrc">Warcraft</option>
-                        <option data-id="actionold" value="spectre">Spectre</option>
-                        <option data-id="actionold" value="mip">Mission Impossible:Ghost Protocol</option>
-                        <option data-id="actionold" value="jwo">Jurrasic World</option>
-                        <option data-id="actionold" value="uncle">The Man from U.N.C.L.E.</option>
-                    </select>
-
-                    <p id="label-t">Please select time of the day</p>
-                    <select id="time">
-
-                    </select>
-
-                    <p id="label-a">Please slect your age range</p>
-                    <select id="age">
-
-                    </select>
-
-                    <div id="totalPrice"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Im awesome</p>
             </div>
+
         </div>
+
     </div>
+
 </body>
 
 </html>

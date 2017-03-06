@@ -61,9 +61,11 @@
 
 .scene_element--fadeinup {
     -webkit-animation-name: fadeInUp;
-    animation-delay: 26s;
-}
 
+}
+.delay26{
+  animation-delay: 26s;
+}
 .delay30 {
     animation-delay: 30s;
 }

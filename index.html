@@ -4,6 +4,7 @@
 <head>
     <link href="styling/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="styling/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="styling/style1.css" rel="stylesheet" type="text/css">
     <link href="styling/style2.css" rel="stylesheet" type="text/css">
     <link href="styling/butns.min.css" rel="stylesheet" type="text/css">
@@ -12,26 +13,81 @@
     <script src="js\jquery.smoothState.min.js"></script>
     <script src="js/script1.js"></script>
     <title>TourKenya</title>
+    <script type="text/javascript">
+        function fullScreen() {
+            var elem = document.getElementById("Video1");
+            var clip = document.getElementById("my-video");
+            elem.play();
+            clip.pause();
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            }
+        }
+        $(document).on('webkitExitFullScreen', function() {
+          var elem = document.getElementById("Video1");
+          var clip = document.getElementById("my-video");
+          elem.pause();
+          clip.play();
+        });
+
+        function vidplay() {
+            var video = document.getElementById("Video1");
+            var button = document.getElementById("play");
+            if (video.paused) {
+                video.play();
+                button.textContent = "||";
+            } else {
+                video.pause();
+                button.textContent = ">";
+            }
+        }
+
+        function restart() {
+            var video = document.getElementById("Video1");
+            video.currentTime = 0;
+        }
+
+        function skip(value) {
+            var video = document.getElementById("Video1");
+            video.currentTime += value;
+        }
+    </script>
+
 </head>
 
 <body>
     <div class="container">
-         <div class="row">
-           <!-- /video text -->
-  <div id="main">
-      <img src="icon/kenya2.png" alt="logo of the company" id="logo" class="m-page scene_element scene_element--fadein content">
-      <h1 class="m-page scene_element scene_element--fadeinup content">TourKenya</h1>
-      <h3 class="m-page scene_element scene_element--fadeinup content delay30">Your paradise awaits!</h3>
-      <a href="#" class="button border-purple gradient-purple rounded transition-white m-page scene_element scene_element--fadeinup content delay30">Get Started</a>
-   </div>
+        <div class="row">
+            <!-- /video text -->
+            <div id="main">
+                <img src="icon/kenya2.png" alt="logo of the company" id="logo" class="m-page scene_element scene_element--fadein content">
+                <h1 class="m-page scene_element scene_element--fadeinup content delay26">TourKenya</h1>
+                <h3 class="m-page scene_element scene_element--fadeinup content delay30">Your paradise awaits!</h3>
+                <a href="home.html" class="button border-purple gradient-purple rounded transition-white m-page scene_element scene_element--fadeinup content delay30">Get Started</a><br>
+                <button type="button" name="button" onclick="fullScreen();" class=" button border-purple gradient-purple rounded transition-white m-page scene_element scene_element--fadeinup content delay30" aria-hidden="true"><i class="fa fa-play-circle" >Full Video</button>
             </div>
             <!-- /video -->
             <video id="my-video" class="video" autoplay="autoplay" loop="loop" width="300" height="150">
-                <source src="assets/Kenya%20Tourist%20Board%20Video.mp4" type="video/mp4" />
+                <source src="assets/Kenya%20Tourist%20Board%20Video-clip.mp4" type="video/mp4" />
             </video> -->
             <!-- /video -->
-         </div>
-     </div>
+
+            <video id="Video1">
+                <source src="assets/Kenya%20Tourist%20Board%20Video.mp4" type="video/mp4" />
+                <source src="demo.ogv" type="video/ogg" />
+            </video>
+        </div>
+        <div id="buttonbar">
+            <button id="restart" onclick="restart();">[]</button>
+            <button id="rew" onclick="skip(-10)">&lt;&lt;</button>
+            <button id="play" onclick="vidplay()">&gt;</button>
+            <button id="fastFwd" onclick="skip(10)">&gt;&gt;</button>
+        </div>
+    </div>
 </body>
 
 </html>
