@@ -27,4 +27,22 @@ $(document).ready(function() {
     var currentRating = 0;
     // max rating, i.e. number of stars you want
     var maxRating = 5;
+    // callback to run after setting the rating
+    var callback = function(rating) {
+        alert(rating);
+    };
+
+    // rating instance
+    var myRating = rating(fairmont, currentRating, maxRating, callback);
+    // sets rating and runs callback
+    myRating.setRating(3);
+
+    // sets rating and runs callback
+    myRating.setRating(3, true);
+
+    // sets rating and doesn't run callback
+    myRating.setRating(3, false);
+
+    // gets the rating
+    myRating.getRating();
 });
