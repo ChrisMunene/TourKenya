@@ -8,6 +8,26 @@ html, body {
     background-color: rgb(255, 99, 0);
 }
 
+p{
+    color: white;
+}
+
+.header{
+    color: rgb(255, 255, 255);
+}
+
+hr {
+    border-color: #ffffff;
+    border-width: 3px;
+    max-width: 50px;
+    margin-left: 7px;
+}
+
+hr.light {
+    border-color: white;
+}
+
+
 #transportation{
     background-color: #ff2600;
 }
