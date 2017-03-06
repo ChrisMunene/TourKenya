@@ -21,9 +21,10 @@ $(document).ready(function() {
         clickEvent = false;
     });
 
-//target element
-    var fairmont =  document.querySelector("#frmara");
-//initial rating
+    //target element
+    var fairmont = document.querySelector("#frmara");
+    //initial rating
     var currentRating = 0;
-    
+    // max rating, i.e. number of stars you want
+    var maxRating = 5;
 });
