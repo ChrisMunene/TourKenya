@@ -22,7 +22,7 @@ $(document).ready(function() {
     });
 
     //target element
-    var fairmont = document.querySelector("#frmara");
+    var rateNumber = document.querySelector("#rating");
     //initial rating
     var currentRating = 0;
     // max rating, i.e. number of stars you want
@@ -33,7 +33,7 @@ $(document).ready(function() {
     };
 
     // rating instance
-    var myRating = rating(fairmont, currentRating, maxRating, callback);
+    var myRating = rating(rateNumber, currentRating, maxRating, callback);
     // sets rating and runs callback
     myRating.setRating(3);
 
@@ -45,4 +45,41 @@ $(document).ready(function() {
 
     // gets the rating
     myRating.getRating();
-});
+
+
+
+    //Rating data
+    var data = {
+        rating: 2
+    };
+
+    // INITIALIZE
+    (function init() {
+        for (var i = 0; i < data.length; i++) {
+            addRatingWidget(addNewRating(data[i]), data[i]);
+        }
+    })();
+
+
+        // BUILD SHOP ITEM
+        function addNewRating(data) {
+          var newRating = document.createElement('div');
+
+          var html = data.rating + '<ul class="c-rating"></ul>';
+
+
+          addNewRating.innerHTML = html;
+          rateNumber.appendChild(shopItem);
+
+          return addNewRating;
+        }
+        // ADD RATING WIDGET
+     function addRatingWidget(shopItem, data) {
+       var ratingElement = shopItem.querySelector('.c-rating');
+       var currentRating = data.rating;
+       var maxRating = 5;
+       var callback = function(rating) { alert(rating); };
+       var r = rating(ratingElement, currentRating, maxRating, callback);
+     }
+
+ });
