@@ -258,3 +258,17 @@ span.underline {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+.fa-green{
+    color: rgb(0, 254, 48)
+}
+
+.fa-blue{
+    color: rgb(0, 219, 206)
+}
+.fa-yellow{
+    color: rgb(254, 244, 0)
+}
+.fa-purple{
+    color: rgb(249, 0, 231)
+}
