@@ -1,6 +1,3 @@
-*{
-    font-family: sans-serif;
-}
 
 html, body {
     height: 100%;
@@ -17,9 +14,14 @@ p{
 }
 
 .carousel_info_light{
-    color: rgb(36, 255, 0);
+    color: rgb(255, 84, 0);
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    font-family: 'Lobster', cursive;
 }
 hr {
     border-color: #ffffff;
@@ -50,10 +52,6 @@ a {
 
 a:hover, a:focus {
     color: #ffffff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .navbar-default {
@@ -131,4 +129,20 @@ h1, h2, h3, h4, h5, h6 {
 i.fa:hover{
     cursor: pointer;
     color: rgb(255, 84, 0)
+}
+
+section{
+    background-color: rgb(48, 48, 48);
+}
+#fairmontpic{
+    float: right;
+}
+#majipic{
+    float: left;
+}
+#villarosapic{
+    float: right;
+}
+#masadapic{
+    float: left;
 }
