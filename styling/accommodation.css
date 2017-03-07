@@ -133,16 +133,8 @@ i.fa:hover{
 
 section{
     background-color: rgb(48, 48, 48);
-}
-#fairmontpic{
-    float: right;
-}
-#majipic{
-    float: left;
-}
-#villarosapic{
-    float: right;
-}
-#masadapic{
-    float: left;
+    position: relative;
+    padding: 1px;
+	text-align: center;
+    color: rgb(255, 255, 255);
 }
