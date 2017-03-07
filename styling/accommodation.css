@@ -119,3 +119,8 @@ h1, h2, h3, h4, h5, h6 {
 #contact_us{
     margin-left: 540px;
 }
+
+i.fa:hover{
+    cursor: pointer;
+    color: rgb(255, 84, 0)
+}
