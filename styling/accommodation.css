@@ -162,13 +162,99 @@ span.underline {
 }
 
 
-#facebook:hover ~ #fb span.underline {
+#facebook:hover ~ #fb .underline {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
 
+#skype:hover ~ #sk .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#github:hover ~ #gt .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#phone:hover ~ #tp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
 #facebook:hover ~ #fb .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#github:hover ~ #gt .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#skype:hover ~ #sk .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#phone:hover ~ #tp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#snapchat:hover ~ #sp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#instagram:hover ~ #ig .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#whatsapp:hover ~ #wp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#windows:hover ~ #ot .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
+#snapchat:hover ~ #sp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#instagram:hover ~ #ig .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#whatsapp:hover ~ #wp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#windows:hover ~ #ot .underlineTwo {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
