@@ -14,34 +14,32 @@
     <script src="js/script1.js"></script>
     <title>TourKenya</title>
     <script type="text/javascript">
-    function progressbar(percent){
-    //var szazalek=Math.round((meik*100)/ossz);
-    document.getElementById("szliderbar").style.width=percent+'%';
-    document.getElementById("szazalek").innerHTML=percent+'%';
-}
+        function progressbar(percent) {
+            //var szazalek=Math.round((meik*100)/ossz);
+            document.getElementById("szliderbar").style.width = percent + '%';
+            document.getElementById("szazalek").innerHTML = percent + '%';
+        }
 
-var elapsedTime=0;
-function timer()
-{
-if(elapsedTime > 100)
-    {
-		document.getElementById("szazalek").style.color = "#FFF";
-        document.getElementById("szazalek").innerHTML = "Completed.";
-		if(elapsedTime >= 107)
-		{
-			clearInterval(interval);
-			history.go(-1);
-		}
-    }
-	else
-	{
-		progressbar(elapsedTime);
-	}
-	elapsedTime++;
+        var elapsedTime = 0;
 
-}
+        function timer() {
+            if (elapsedTime > 100) {
+                document.getElementById("szazalek").style.color = "#FFF";
+                document.getElementById("szazalek").innerHTML = "Completed.";
+                if (elapsedTime >= 107) {
+                    clearInterval(interval);
+                    history.go(-1);
+                }
+            } else {
+                progressbar(elapsedTime);
+            }
+            elapsedTime++;
 
-var myVar=setInterval(function(){timer()},100);
+        }
+
+        var myVar = setInterval(function () {
+            timer()
+        }, 100);
 
         function fullScreen() {
             var elem = document.getElementById("Video1");
@@ -56,11 +54,11 @@ var myVar=setInterval(function(){timer()},100);
                 elem.webkitRequestFullscreen();
             }
         }
-        $(document).on('webkitExitFullScreen', function() {
-          var elem = document.getElementById("Video1");
-          var clip = document.getElementById("my-video");
-          elem.pause();
-          clip.play();
+        $(document).on('webkitExitFullScreen', function () {
+            var elem = document.getElementById("Video1");
+            var clip = document.getElementById("my-video");
+            elem.pause();
+            clip.play();
         });
 
         function vidplay() {
@@ -89,14 +87,15 @@ var myVar=setInterval(function(){timer()},100);
 </head>
 
 <body>
-  <body onload="drawszlider(121, 56);">
-    <div id="szlider">
-    <div id="szliderbar">
-    </div>
-    <div id="szazalek">
-    </div>
-</div>
-</body>
+
+    <body onload="drawszlider(121, 56);">
+        <div id="szlider">
+            <div id="szliderbar">
+            </div>
+            <div id="szazalek">
+            </div>
+        </div>
+    </body>
     <div class="container">
         <div class="row">
             <!-- /video text -->
@@ -104,8 +103,9 @@ var myVar=setInterval(function(){timer()},100);
                 <img src="icon/kenya2.png" alt="logo of the company" id="logo" class="m-page scene_element scene_element--fadein content">
                 <h1 class="m-page scene_element scene_element--fadeinup content delay26">TourKenya</h1>
                 <h3 class="m-page scene_element scene_element--fadeinup content delay30">Your paradise awaits!</h3>
-                <a href="home.html" class="button border-purple gradient-purple rounded transition-white m-page scene_element scene_element--fadeinup content delay30">Get Started</a><br>
-                <button type="button" name="button" onclick="fullScreen();" class=" button border-purple gradient-purple rounded transition-white m-page scene_element scene_element--fadeinup content delay30" aria-hidden="true"><i class="fa fa-play-circle" >Full Video</button>
+                <a href="home.html" class="button border-purple gradient-purple rounded transition-white m-page scene_element scene_element--fadeinup content delay30">Get Started</a>
+                <br>
+                <button type="button" name="button" onclick="fullScreen();" class=" button border-purple gradient-purple rounded transition-white m-page scene_element scene_element--fadeinup content delay30" aria-hidden="true"><i class="fa fa-play-circle">Full Video</button>
             </div>
             <!-- /video -->
             <video id="my-video" class="video" autoplay="autoplay" loop="loop" width="300" height="150">
@@ -114,8 +114,9 @@ var myVar=setInterval(function(){timer()},100);
             <!-- /video -->
 
             <video id="Video1">
-                <source src="assets/Kenya%20Tourist%20Board%20Video.mp4" type="video/mp4" />
-                <source src="demo.ogv" type="video/ogg" />
+                <source src="assets/Kenya%20Tourist%20Board%20Video_CLIPCHAMP_keep.webm" type="video/webm" />
+                <source src="assets/Kenya%20Tourist%20Board%20Video_CLIPCHAMP_keep.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                <source src="assets/Kenya%20Tourist%20Board%20Video.mp4" type="video/mp4" />                
             </video>
         </div>
         <div id="buttonbar">
