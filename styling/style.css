@@ -83,6 +83,8 @@
 #uber-bar {
     text-align: center;
     font-size: 30px;
+    background:  #b4975a;
+    margin:0 105px;
 }
 
 #tag {
