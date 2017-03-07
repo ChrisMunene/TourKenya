@@ -53,10 +53,11 @@
 
 .scene_element--fadein {
     -webkit-animation-name: fadeIn;
-    animation-delay: 20s;
+    
 }
-
-
+.delay20{
+  animation-delay: 20s;
+}
 /** An element that fades in and slides up */
 
 .scene_element--fadeinup {
