@@ -43,7 +43,9 @@ h1 {
     z-index: 1;
     overflow: hidden;
     text-align: center;
+    font-family: 'Cardo', serif;
 }
+
 h1:before, h1:after {
     position: absolute;
     top: 51%;
@@ -53,6 +55,15 @@ h1:before, h1:after {
     content: '\a0';
     background-color: black;
 }
+.activities h1{
+  width: 800px;
+  margin-left: 260px;
+}
+.picture-area h1{
+  width: 800px;
+  margin-left: 260px;
+  padding-top: 20px;
+}
 h1:before {
     margin-left: -50%;
     text-align: right;
@@ -61,10 +72,12 @@ h1 span{
   padding-left: 20px;
   padding-right: 20px;
 }
-.description h2{
-  width: 640px;
-  font-family: 'Cardo', serif;
+.activities h1{
+  width: 800px;
+  margin-left: 260px;
 }
+
+
 .description p{
   line-height: 2.2em;
   font-size: 15px;
@@ -85,20 +98,7 @@ h1 span{
   margin-left: 60px;
   border-bottom: 1px solid rgb(158, 158, 106);
 }
-.book-button {
-  width: 150px;
-  height: 70px;
-  background-color: #AAE6F7;
-  transition: 1s;
-  color: #FFFFFF;
-  font-size: 22px;
-  border-radius: 4px;
-}
 
-.book-button:hover {
-  width: 200px;
-  background-color: orange;
-}
 .galary-button {
   display: inline-block;
   border-radius: 4px;
@@ -153,7 +153,6 @@ h1 span{
 
 .activities{
   width: 100%;
-  background-color:
 }
 .activity{
   height: 320px;
@@ -265,4 +264,40 @@ transform:translatey(0);
 .hovereffect:hover a.info {
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
+}
+.book-button:hover {
+  width: 200px;
+  background-color: orange;
+}
+.book-button {
+  width: 150px;
+  height: 70px;
+  background-color: #AAE6F7;
+  transition: 1s;
+  color: #FFFFFF;
+  font-size: 22px;
+  border-radius: 4px;
+  margin: 20px 0 0 550px;
+}
+#book-button{
+  height: 100px;
+  width: 1200px;
+  background-color: #b4975a;
+}
+
+.reviews{
+  background-color:  rgba(180, 179, 173, 0.79);
+  padding: 20px 0 0 60px;
+  height: 400px;
+}
+.customer{
+  height: 270px;
+  width: 300px;
+  border: 1px solid black;
+  padding: 10px 20px 10px 30px;
+}
+.customer p{
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.5em;
 }
