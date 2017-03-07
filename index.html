@@ -8,12 +8,41 @@
     <link href="styling/style1.css" rel="stylesheet" type="text/css">
     <link href="styling/style2.css" rel="stylesheet" type="text/css">
     <link href="styling/butns.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Sansita|Baloo|Cardo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sansita|Baloo" rel="stylesheet">
     <script src="js\jquery-3.1.1.min.js"></script>
     <script src="js\jquery.smoothState.min.js"></script>
     <script src="js/script1.js"></script>
     <title>TourKenya</title>
     <script type="text/javascript">
+    function progressbar(percent){
+    //var szazalek=Math.round((meik*100)/ossz);
+    document.getElementById("szliderbar").style.width=percent+'%';
+    document.getElementById("szazalek").innerHTML=percent+'%';
+}
+
+var elapsedTime=0;
+function timer()
+{
+if(elapsedTime > 100)
+    {
+		document.getElementById("szazalek").style.color = "#FFF";
+        document.getElementById("szazalek").innerHTML = "Completed.";
+		if(elapsedTime >= 107)
+		{
+			clearInterval(interval);
+			history.go(-1);
+		}
+    }
+	else
+	{
+		progressbar(elapsedTime);
+	}
+	elapsedTime++;
+
+}
+
+var myVar=setInterval(function(){timer()},100);
+
         function fullScreen() {
             var elem = document.getElementById("Video1");
             var clip = document.getElementById("my-video");
@@ -60,6 +89,14 @@
 </head>
 
 <body>
+  <body onload="drawszlider(121, 56);">
+    <div id="szlider">
+    <div id="szliderbar">
+    </div>
+    <div id="szazalek">
+    </div>
+</div>
+</body>
     <div class="container">
         <div class="row">
             <!-- /video text -->
