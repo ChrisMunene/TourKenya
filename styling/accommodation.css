@@ -1,28 +1,28 @@
-
 html, body {
     height: 100%;
     width: 100%;
     background-color: rgb(255, 99, 0);
 }
 
-p{
+p {
     color: white;
 }
 
-.header{
+.header {
     color: rgb(255, 255, 255);
 }
 
-.carousel_info_light{
+.carousel_info_light {
     color: rgb(255, 84, 0);
     font-size: 20px;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
 }
 
-.container{
+.container {
     font-family: 'Lobster', cursive;
 }
+
 hr {
     border-color: #ffffff;
     border-width: 3px;
@@ -34,12 +34,11 @@ hr.light {
     border-color: white;
 }
 
-#transportation{
+#transportation {
     background-color: #ff2600;
 }
 
-
-#reservation{
+#reservation {
     background-color: #2bff00;
 }
 
@@ -109,49 +108,52 @@ a:hover, a:focus {
     }
 }
 
-#accommodation, #reservation, #transportation{
+#accommodation, #reservation, #transportation {
     color: rgb(255, 255, 255);
 }
-#tourkenyalogo{
+
+#tourkenyalogo {
     margin-left: 550px;
 }
-#contact{
+
+#contact {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     width: 100%;
     text-align: center;
 }
 
-#contact_us{
+#contact_us {
     margin-left: 540px;
 }
 
-i.fa:hover{
+i.fa:hover {
     cursor: pointer;
     color: rgb(255, 84, 0)
 }
 
-section{
+section {
     background-color: rgb(48, 48, 48);
     position: relative;
     padding: 1px;
-	text-align: center;
+    text-align: center;
     color: rgb(255, 255, 255);
 }
 
-.underline {
-	background-color: #E63838; /* same as link color */
-	display: block;
-	height: 2px;
-	width: 100%;
-	padding: 0;
-  -webkit-transform: scaleX(0);
-	transform: scaleX(0);
-  -webkit-transition: all 0.25s;
-	transition: all 0.25s;
+#fb span.underline {
+    background-color: #E63838;
+    /* same as link color */
+    display: block;
+    height: 2px;
+    width: 100%;
+    padding: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
 }
 
-
-#facebook:hover ~ #fb {
-
+#facebook:hover ~ #fb span.underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
