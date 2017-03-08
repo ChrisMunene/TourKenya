@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="styling/butns.min.css">
+    <link href="styling/star-rating.min.css" media="all" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="styling/accommodation.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Lobster|Playfair+Display" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js\jquery.smoothState.min.js" type="text/javascript"></script>
+    <script src="js/star-rating.min.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
     <link rel="shortcut icon" href="icon\kflag.ico" />
     <title>TourKenya: Hotels and Resorts</title>
@@ -117,124 +119,126 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <h2 class="header"><i class="fa fa-ellipsis-h"></i> Check out some the 5-star resorts and hotels that you can stay at in our beautiful country <i class="fa fa-ellipsis-h"></i></h2>
-            <section id="fairmont">
-                <i class="fa fa-3x fa-stumbleupon-circle"></i>
-                <h3 class="header">Fairmont Mara Safari</h3>
-                <hr class="light"><img src="images\fairmont1.jpg" alt="image of hotel" id="fairmontpic">
-                <p>The Fairmont Mara Safari Club, a luxury Masai Mara resort hotel in Kenya, re-opened in 2009 following an extensive renovation program.</p>
-                <p> Surrounded on three sides by the breathtaking Mara River, and on the edge of the world’s Seventh “New” Wonder of the World – the Masai Mara - Fairmont Mara Safari Club is the epitome of tented luxury. </p>
-                <p>A Top 20 Luxury Resort by Travel & Leisure Magazine The Fairmont is a host to a number of fine dining, safari and outdoor activities. The main Masai Mara lodge at the center of camp hosts an indoor restaurant, bar and library with Internet
-                    access to keep the relatives up to date with safari adventures. A spacious outside deck overhangs the river and leads to a swimming pool, complete with bar and private massage tents.</p>
-                <a href="#" class="button border-white small rounded">Check in today <i class="fa fa-gg fa-spin"></i></a>
-            </section>
-            <section id="majibeach">
-                <i class="fa fa-3x fa-stumbleupon-circle"></i>
-                <h3 class="header">Maji Beach Resort Diani</h3>
-                <hr class="light"><img src="images\maji1.jpg" alt="image of hotel" id="majipic">
-                <p>Maji is the Swahili word for water.</p>
-                <p>
-                    A Spectacular Exclusive, Multi-Star Beach Boutique Hotel introducing to the Kenyan coast a new dimension in design concept and hospitality.</p>
-                <p>
-                    Water is life and water embraces the “good life” at “The Maji”. The Indian Ocean caresses the reserved beach, three sides of the hotel are surrounded by the extensive swimming pool springing out from the heart of the hotel lobby and other water features
-                    further enrich the ambiance.</p>
+        <h2 class="header"><i class="fa fa-ellipsis-h"></i> Check out some the 5-star resorts and hotels that you can stay at in our beautiful country <i class="fa fa-ellipsis-h"></i></h2>
+        <section id="fairmont">
+            <i class="fa fa-3x fa-stumbleupon-circle"></i>
+            <h3 class="header">Fairmont Mara Safari</h3>
+            <input id="input-5-sm" class="rating rating-loading" value="5" data-min="0" data-max="5" data-step="0.5" data-size="sm">
+            <hr class="light"><img src="images\fairmont1.jpg" alt="image of hotel" id="fairmontpic">
+            <p>The Fairmont Mara Safari Club, a luxury Masai Mara resort hotel in Kenya, re-opened in 2009 following an extensive renovation program.</p>
+            <p> Surrounded on three sides by the breathtaking Mara River, and on the edge of the world’s Seventh “New” Wonder of the World – the Masai Mara - Fairmont Mara Safari Club is the epitome of tented luxury. </p>
+            <p>A Top 20 Luxury Resort by Travel & Leisure Magazine The Fairmont is a host to a number of fine dining, safari and outdoor activities. The main Masai Mara lodge at the center of camp hosts an indoor restaurant, bar and library with Internet
+                access to keep the relatives up to date with safari adventures. A spacious outside deck overhangs the river and leads to a swimming pool, complete with bar and private massage tents.</p>
+            <a href="#" class="button border-white small rounded">Check in today <i class="fa fa-gg fa-spin"></i></a>
+        </section>
+        <section id="majibeach">
+            <i class="fa fa-3x fa-stumbleupon-circle"></i>
+            <h3 class="header">Maji Beach Resort Diani</h3>
+            <hr class="light"><img src="images\maji1.jpg" alt="image of hotel" id="majipic">
+            <p>Maji is the Swahili word for water.</p>
+            <p>
+                A Spectacular Exclusive, Multi-Star Beach Boutique Hotel introducing to the Kenyan coast a new dimension in design concept and hospitality.</p>
+            <p>
+                Water is life and water embraces the “good life” at “The Maji”. The Indian Ocean caresses the reserved beach, three sides of the hotel are surrounded by the extensive swimming pool springing out from the heart of the hotel lobby and other water features
+                further enrich the ambiance.</p>
 
-                <p>15 individually designed bedrooms each with its own unique character.</p>
-                <a href="#" class="button border-white small rounded">Check in today <i class="fa fa-gg fa-spin"></i></a>
-            </section>
-            <section id="villarosa">
-                <i class="fa fa-3x fa-stumbleupon-circle"></i>
-                <h3 class="header">Villa Rosa Kempinsnki -  Nairobi</h3>
-                <hr class="light"><img src="images\villarosa1.jpg" alt="image of hotel" id="villarosapic">
-                <p>Offering the perfect fusion of European luxury and Kenyan hospitality, Villa Rosa Kempinski is positioned between the city and countryside.</p>
-                <p> The hotel is a unique destination where guests can spend time relaxing or working, and in addition to the 200 rooms and suites distributed throughout its ten floors, you will also find exquisite dining opportunities here.
-                </p>
-                <p>
-                    In addition to our all-day dining restaurant, Cafe Villa Rosa, you can try a range of menus and dining styles across K Lounge; Balcony Bar; Pan-Asian 88 Lounge and Restaurant; Italian Restaurant LUCCA; and our Levant -style lounge and restaurant Tambourin</p>
-                <a href="#" class="button border-white small rounded">Check in today <i class="fa fa-gg fa-spin"></i></a>
-            </section>
-            <section id="masada">
-                <i class="fa fa-3x fa-stumbleupon-circle"></i>
-                <h3 class="header">Masada Hotel</h3>
-                <hr class="light"><img src="images\masada1.jpg" alt="image of hotel" id="masadapic">
-                <p>Masada is the name for a site of ancient palaces and fortifications in Southern District of Israel, on top of an isolated rock plateau, or horst, on the eastern edge of the Judaean Desert, overlooking the Dead Sea. As the name suggests
-                    Masada Resort is a fortress of relaxation.
-                </p>
-                <p>
-                    Situated on the Naivasha South road, 500 meters off the Mai Mahiu - Naivasha Highway, Masada Hotel is the getaway destination you have been waiting for.. as the name suggests, Masada, a fortress - a place of comfort complete, with ultra modern facilities.</p>
-                <a href="#" class="button border-white small rounded">Check in today <i class="fa fa-gg fa-spin"></i></a>
-            </section>
-
-
-
-            <section id="contact">
-                <footer>
-                    <h2 class="header">Contact Us</h2>
-                    <hr class="light">
-                    <p>For enquiries and more details about TourKenya reach us through our contact information below</p>
-                    <div class="row">
-                        <div class="col-md-3" id="facebook">
-                            <i class="fa fa-facebook fa-2x fa-blue"></i>
-                        </div>
-                        <div class="col-md-3" id="skype">
-                            <i class="fa fa-skype fa-2x fa-blue"></i>
-                        </div>
-                        <div class="col-md-3" id="github">
-                            <i class="fa fa-github fa-2x fa-purple"></i>
-                        </div>
-                        <div class="col-md-3" id="phone">
-                            <i class="fa fa-phone fa-2x fa-green"></i>
-                        </div>
-                        <div class="col-md-3" id="fb">
-                            <h4 class="underlineTwo">Facebook</h4><span class="underline"></span>
-                        </div>
-                        <div class="col-md-3" id="sk">
-                            <h4 class="underlineTwo">Skype</h4><span class="underline"></span>
-                        </div>
-                        <div class="col-md-3" id="gt">
-                            <h4 class="underlineTwo">Github</h4><span class="underline"></span>
-                        </div>
-                        <div class="col-md-3" id="tp">
-                            <h4 class="underlineTwo">Telephone</h4><span class="underline"></span>
-                        </div>
-                        <div class="col-md-3" id="snapchat">
-                            <i class="fa fa-snapchat fa-2x fa-yellow"></i>
-                        </div>
-                        <div class="col-md-3" id="instagram">
-                            <i class="fa fa-instagram fa-2x fa-purple"></i>
-                        </div>
-                        <div class="col-md-3" id="whatsapp">
-                            <i class="fa fa-whatsapp fa-2x fa-green"></i>
-                        </div>
-                        <div class="col-md-3" id="windows">
-                            <i class="fa fa-windows fa-2x fa-blue"></i>
-                        </div>
-                        <div class="col-md-3" id="sp">
-                            <h4 class="underlineTwo">Snapchat</h4><span class="underline"></span>
-                        </div>
-                        <div class="col-md-3" id="ig">
-                            <h4 class="underlineTwo">Instagram</h4><span class="underline"></span>
-                        </div>
-                        <div class="col-md-3" id="wp">
-                            <h4 class="underlineTwo">Whatsapp</h4><span class="underline"></span>
-                        </div>
-                        <div class="col-md-3" id="ot">
-                            <h4 class="underlineTwo">Outlook</h4><span class="underline"></span>
-                        </div>
-
-                        <h2 class="header">Accepted forms of payment</h2>
-                        <hr class="light">
-
-                        <div class="cold-md-offset-6">
-                            <i class="fa fa-paypal fa-2x fa-blue"></i> <i class="fa fa-google-wallet fa-green fa-2x"></i> <i class="fa fa-cc-visa fa-2x fa-yellow"></i> <i class="fa fa-cc-mastercard fa-2x fa-red"></i>
-                            <i class="fa fa-cc-amex fa-2x"></i>
-                        </div>
+            <p>15 individually designed bedrooms each with its own unique character.</p>
+            <a href="#" class="button border-white small rounded">Check in today <i class="fa fa-gg fa-spin"></i></a>
+        </section>
+        <section id="villarosa">
+            <i class="fa fa-3x fa-stumbleupon-circle"></i>
+            <h3 class="header">Villa Rosa Kempinsnki -  Nairobi</h3>
+            <hr class="light"><img src="images\villarosa1.jpg" alt="image of hotel" id="villarosapic">
+            <p>Offering the perfect fusion of European luxury and Kenyan hospitality, Villa Rosa Kempinski is positioned between the city and countryside.</p>
+            <p> The hotel is a unique destination where guests can spend time relaxing or working, and in addition to the 200 rooms and suites distributed throughout its ten floors, you will also find exquisite dining opportunities here.
+            </p>
+            <p>
+                In addition to our all-day dining restaurant, Cafe Villa Rosa, you can try a range of menus and dining styles across K Lounge; Balcony Bar; Pan-Asian 88 Lounge and Restaurant; Italian Restaurant LUCCA; and our Levant -style lounge and restaurant Tambourin</p>
+            <a href="#" class="button border-white small rounded">Check in today <i class="fa fa-gg fa-spin"></i></a>
+        </section>
+        <section id="masada">
+            <i class="fa fa-3x fa-stumbleupon-circle"></i>
+            <h3 class="header">Masada Hotel</h3>
+            <hr class="light"><img src="images\masada1.jpg" alt="image of hotel" id="masadapic">
+            <p>Masada is the name for a site of ancient palaces and fortifications in Southern District of Israel, on top of an isolated rock plateau, or horst, on the eastern edge of the Judaean Desert, overlooking the Dead Sea. As the name suggests Masada
+                Resort is a fortress of relaxation.
+            </p>
+            <p>
+                Situated on the Naivasha South road, 500 meters off the Mai Mahiu - Naivasha Highway, Masada Hotel is the getaway destination you have been waiting for.. as the name suggests, Masada, a fortress - a place of comfort complete, with ultra modern facilities.</p>
+            <a href="#" class="button border-white small rounded">Check in today <i class="fa fa-gg fa-spin"></i></a>
+        </section>
 
 
+
+        <section id="contact">
+            <footer>
+                <h2 class="header">Contact Us</h2>
+                <hr class="light">
+                <p>For enquiries and more details about TourKenya reach us through our contact information below</p>
+                <div class="row">
+                    <div class="col-md-3" id="facebook">
+                        <i class="fa fa-facebook fa-2x fa-blue"></i>
                     </div>
-                </footer>
-</section>
+                    <div class="col-md-3" id="skype">
+                        <i class="fa fa-skype fa-2x fa-blue"></i>
+                    </div>
+                    <div class="col-md-3" id="github">
+                        <i class="fa fa-github fa-2x fa-purple"></i>
+                    </div>
+                    <div class="col-md-3" id="phone">
+                        <i class="fa fa-phone fa-2x fa-green"></i>
+                    </div>
+                    <div class="col-md-3" id="fb">
+                        <h4 class="underlineTwo">Facebook</h4><span class="underline"></span>
+                    </div>
+                    <div class="col-md-3" id="sk">
+                        <h4 class="underlineTwo">Skype</h4><span class="underline"></span>
+                    </div>
+                    <div class="col-md-3" id="gt">
+                        <h4 class="underlineTwo">Github</h4><span class="underline"></span>
+                    </div>
+                    <div class="col-md-3" id="tp">
+                        <h4 class="underlineTwo">Telephone</h4><span class="underline"></span>
+                    </div>
+                    <div class="col-md-3" id="snapchat">
+                        <i class="fa fa-snapchat fa-2x fa-yellow"></i>
+                    </div>
+                    <div class="col-md-3" id="instagram">
+                        <i class="fa fa-instagram fa-2x fa-purple"></i>
+                    </div>
+                    <div class="col-md-3" id="whatsapp">
+                        <i class="fa fa-whatsapp fa-2x fa-green"></i>
+                    </div>
+                    <div class="col-md-3" id="windows">
+                        <i class="fa fa-windows fa-2x fa-blue"></i>
+                    </div>
+                    <div class="col-md-3" id="sp">
+                        <h4 class="underlineTwo">Snapchat</h4><span class="underline"></span>
+                    </div>
+                    <div class="col-md-3" id="ig">
+                        <h4 class="underlineTwo">Instagram</h4><span class="underline"></span>
+                    </div>
+                    <div class="col-md-3" id="wp">
+                        <h4 class="underlineTwo">Whatsapp</h4><span class="underline"></span>
+                    </div>
+                    <div class="col-md-3" id="ot">
+                        <h4 class="underlineTwo">Outlook</h4><span class="underline"></span>
+                    </div>
+
+                    <h2 class="header">Accepted forms of payment</h2>
+                    <hr class="light">
+
+                    <div class="cold-md-offset-6">
+                        <i class="fa fa-paypal fa-2x fa-blue"></i> <i class="fa fa-google-wallet fa-green fa-2x"></i> <i class="fa fa-cc-visa fa-2x fa-yellow"></i> <i class="fa fa-cc-mastercard fa-2x fa-red"></i>
+                        <i class="fa fa-cc-amex fa-2x"></i>
+                    </div>
+
+
+                </div>
+            </footer>
+        </section>
 </body>
 
 </html>
