@@ -658,5 +658,9 @@ hr.light {
 
 .emojis {
     list-style-type: none;
-    font-size: 14px;
+    font-size: 15px;
+    text-align: justify;
+}
+.emojis>li{
+  padding:5px 0;
 }
