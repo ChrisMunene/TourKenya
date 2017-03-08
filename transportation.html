@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="styling/butns.min.css">
+    <link href="styling/star-rating.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="styling\jquery.gridder.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styling/transportation.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Lobster|Playfair+Display" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js\jquery.smoothState.min.js" type="text/javascript"></script>
+    <script src="js/star-rating.min.js" type="text/javascript"></script>
+    <script src="js/transportation.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="icon\kflag.ico" />
+    <title>TourKenya:Tours and Safaris</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <nav id="siteNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand page-scroll" href="home.html">Home</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="accommodation-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-center">
+                        <li id="tourkenyalogo">
+                            <img src="icon\flag2.png" alt="logo of the company" width="50" height="50">
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="accommodation">
+                            <a href="accommodation.html">Accommodation</a>
+                        </li>
+                        <li id="transportation">
+                            <a href="transportation.html">Transportation</a>
+                        </li>
+                        <li id="reservation">
+                            <a href="booking.html">Make a Reservation</a>
+                        </li>
+                </div>
+        </nav>
+        </div>
+        <div class="container" id="page_info">
+            <h1>Checkout out our affiliate transportation companies</h1>
+<i class="fa fa-cube fa-spin"></i>
+        </div>
+
+        <div class="container">
+            <ul class="gridder">
+                <li class="gridder-list" data-griddercontent="#gridder-content-1" id="wilderness">
+                    <img src="images\wilderness.png" width="200" height="200" class="img-responsive" />
+                </li>
+                <!--
+            -->
+                <li class="gridder-list" data-griddercontent="#gridder-content-2" id="african">
+                    <img src="images\african.png" width="200" height="200" class="img-responsive" />
+                </li>
+                <!--
+            -->
+                <li class="gridder-list" id="wildernesstext">
+                    <h4 class="underlineTwo">Wilderness Safaris</h4><span class="underline"></span>
+                </li>
+                <!--
+            -->
+                <li class="gridder-list" id="africantext">
+                    <h4 class="underlineTwo">African Portfolio Safaris</h4><span class="underline"></span>
+                </li>
+                <!--
+            -->
+                <li class="gridder-list" data-griddercontent="#gridder-content-3" id="uber">
+                    <img src="images\uber.png" width="200" height="200" class="img-responsive" />
+                </li>
+                <!--
+            -->
+                <li class="gridder-list" data-griddercontent="#gridder-content-4" id="little">
+                    <img src="images\little.png" width="200" height="200" class="img-responsive" />
+                </li>
+                <!--
+            -->
+                </li>
+                <!--
+                        -->
+                <li class="gridder-list" id="ubertext">
+                    <h4 class="underlineTwo">Uber</h4><span class="underline"></span>
+                </li>
+                <!--
+                        -->
+                <li class="gridder-list" id="littletext">
+                    <h4 class="underlineTwo">Little Cab</h4><span class="underline"></span>
+                </li>
+                <li class="gridder-list" data-griddercontent="#gridder-content-5" id="gamewatchers">
+                    <img src="images\gamewatchers.png" width="200" height="200" class="img-responsive" />
+                </li>
+                <!--
+            -->
+                <li class="gridder-list" data-griddercontent="#gridder-content-6" id="micato">
+                    <img src="images\micato.png" width="200" height="200" class="img-responsive" />
+                </li>
+                <!--
+            -->
+                </li>
+                <!--
+                        -->
+                <li class="gridder-list" id="watcherstext">
+                    <h4 class="underlineTwo">Gamewatchers Safaris</h4><span class="underline"></span>
+                </li>
+                <!--
+                        -->
+                <li class="gridder-list" id="micatotext">
+                    <h4 class="underlineTwo">Micato Safaris</h4><span class="underline"></span>
+                </li>
+                <li class="gridder-list" data-griddercontent="#gridder-content-7" id="nomad">
+                    <img src="images\nomad.png" width="200" height="200" class="img-responsive" />
+                </li>
+                <!--
+            -->
+                <li class="gridder-list" data-griddercontent="#gridder-content-8" id="andbeyond">
+                    <img src="images\andbeyond.png" width="200" height="200" class="img-responsive" />
+                </li>
+                </li>
+                <!--
+                            -->
+                <li class="gridder-list" id="nomadtext">
+                    <h4 class="underlineTwo">Nomad Tanazania</h4><span class="underline"></span>
+                </li>
+                <!--
+                            -->
+                <li class="gridder-list" id="andbeyondtext">
+                    <h4 class="underlineTwo">&Beyond</h4><span class="underline"></span>
+                </li>
+            </ul>
+
+            <div id="gridder-content-1" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="https://artofsafari.travel/wp-content/uploads/2017/02/Namibia_Sossusvlei_WildernessSafaris_LittleKulala_QuadBiking-600x600.jpg" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Wilderness Safaris</h2>
+                        <p>One of Africa’s most respected and innovative tour operators, Wilderness Safaris assures you impeccable service, pristine wilderness destinations, spacious safari camps, and wildlife galore. </p>
+                        <p>The company operates a wide array of safari camps and lodges, from “seven star” premier accommodation to mobile safaris known as Explorations to tailor-made itineraries and honeymoon packages. Wilderness has more than seventy lodges
+                            and camps, all with different styles, so there is something for everyone.</p>
+                        <p> It has a regional office in each country in which it operates, as well as a head office in Gaborone, Botswana, ensuring that its ground operations run very smoothly.</p>
+                        <strong>Popular packages:</strong> The Great Wilderness Journey, Botswana, eleven days, from $9,773; Desert Dune Safari, ten days, from $5,000.
+
+                        <p>
+                            <strong>Philanthropy:</strong> In addition to a 4 Cs sustainability program (Conservation, Community, Culture and Commerce), Wilderness has also created two nonprofit programs to further its aims of helping children in Africa:
+                            Children in the Wilderness and the Wilderness Wildlife Trust.</p>
+
+                        <p>
+                            <strong>What they do best:</strong> Incredible destinations, authentic experiences, and seamless service from start to finish.
+                            <p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-2" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="https://artofsafari.travel/wp-content/uploads/2016/12/Botswana__OkavangoDelta_WildernessSafarisVumburaPlains_GameDrive1-1-600x600.jpg" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>African Portfolio</h2>
+                        <p>African Portfolio’s team members visit each in-country operator annually and are on a first-name basis with the managers of the properties they use.</p>
+                        <p>They pride themselves on discovering the best places, whether they’re hidden gems, up-and-coming properties, or well-established classics. With each client, they’re committed to providing a safari reminiscent of what captivates
+                            them about Africa. </p>
+                        <p>Their mission is to provide unique and memorable experiences through nature-based travel that educate, entertain, inspire, and provide participants with opportunities to directly contribute to conservation.</p>
+                        <p><strong>Destinations:</strong> Botswana, Kenya, Malawi, Mauritius, Mozambique, Namibia, Rwanda, Seychelles, South Africa, Tanzania, Uganda, Zambia, Zimbabwe.
+                        </p>
+                        <p>
+                            <strong>Popular package:</strong> Great Rift Valley Safari, Tanzania, 10 days, from $6,000.
+                        </p>
+                        <p><strong>Philanthropy:</strong> African Portfolio was started in Zimbabwe and its philanthropic efforts are directed there; this includes support for orphanages and a wildlife sanctuary.</p>
+
+                        <p><strong>What they do best:</strong> Assisting travelers with “off the beaten path” trips.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-3" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.2.20/d1a3f4spazzrp4.cloudfront.net/images/seo-image-30cc8ae4a5.jpg" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Uber</h2>
+                        <p>Uber is a technology platform. Our smartphone apps connect driver-partners and riders.</p>
+                        <p>In cities where Uber operates, use your rider app to request a ride. When a nearby driver-partner accepts your request, your app displays an estimated time of arrival for the driver-partner heading to your pickup location. Your
+                            app notifies you when the driver-partner is about to arrive.</p>
+                        <p>Your app also provides info about the driver-partner with whom you will ride, including first name, vehicle type, and license plate number. This info helps the two of you connect at your pickup location.</p>
+                        <p>Use your app to enter your preferred destination anytime before or during the ride. If you have a preferred route, it’s helpful to talk through the directions together.</p>
+                        <p>
+                            When you arrive at your destination and exit the vehicle, your trip ends. Your fare is automatically calculated and charged to the payment method you’ve linked to your Uber account.</p>
+                        <p>Nairobi is one of the cities running on Uber</p>
+
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-4" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="http://venturesafrica.com/wp-content/uploads/2016/07/LittleCab-Safaricom-Kenya-Uber-Ventures-Africa.jpg" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Little cab</h2>
+                        <p>Little Cab, the ride-hailing app backed by telecoms operator Safaricom, is slowly giving Uber a run for its money in Kenya. Since its launch in July, it has signed up 1,600 active drivers, outnumbering Uber’s just over 1,000 drivers
+                            since began operations in Jan. 2015.</p>
+                        <p>Safaricom, Kenya’s largest company, essentially launched Little Cab as a competitor to Uber, with cheaper and more localized solutions. Safaricom also sees the app as part of its plans to diversify its products and create brand
+                            loyalty. Little Cab allows customers to pay for their ride or for others through the Safaricom’s mobile money service, M-Pesa; buy discounted airtime during the trip; access free Wi-Fi; allows non-smartphone users to hail a
+                            cab through a USSD system; and lets women exclusively request for female drivers from 6 pm to 6 am for safety issues.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-5" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="https://1akt4l2ekuzzzlwlj5f4wn17-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/maramba-river-lodge-gallery-image-8-1424434202.jpg" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Gamewatchers Safaris</h2>
+                        <p>This Nairobi-based company specializes in delivering luxury, tailor-made safaris to small camps and lodges in the top game-viewing areas of East Africa. Every traveler is guaranteed a personal, authentic safari and the opportunity
+                            to experience the magic of the African bush while helping protect Africa’s wildlife, ecosystems, and cultures. Gamewatchers runs its own ground operations, ensuring guests are well looked after from the start of their trip
+                            to the finish. Guests often add beach trips to the end of their safaris.
+                        </p>
+                        <p>
+                            <strong>Destinations:</strong> Botswana, Kenya, Mauritius, Rwanda, Seychelles, South Africa, Tanzania, Zambia.
+                        </p>
+                        <p>
+                            </strong>
+                            Popular packages:</strong> African Splendours Safari, twelve nights, from $5,895; Gamewatchers Adventure Camping Safari, six nights, from $1,995.
+                        </p>
+                        <p>
+                            <strong>Philanthropy:</strong> It supports a school in Kibera, Nairobi, and more than 1,000 Maasai families are directly benefiting as a result of its conservancies. It has also set up outreach pro-grams to assist with water
+                            provision, education, and predator protection.
+                        </p>
+                        <p><strong>
+What they do best:</strong> A personal, authentic experience, as far from mass-market tourism as it’s possible to get.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-6" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="http://pbs.twimg.com/media/CGPZRg7U8AIdTNv.jpg" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Micato Safaris</h2>
+                        <p>Family-owned and -operated, this New York-based operator offers ultra luxurious trips driven by a sustainable ethos. Safari lodges enchant with such unadulterated luxuries as private plunge pools and personal butlers. Cultured
+                            safari guides educate, instruct, and amuse, while itineraries offer an irresistible array of experiences from the sophisticated pleasures of Cape Town to the celebrated savannas of the Serengeti and the near-spiritual beauty
+                            of the Kalahari.</p>
+                        <p>
+                            Micato has long been praised for its ability to deliver seamless personalized “un-group-like” service and over-the-top luxury without sacrificing true immersion in the “real Africa.” Standout inclusions on Micato programs include timesaving bush flights
+                            between lodges and an “all tips included” policy.
+                        </p>
+                        <p><strong>
+Destinations:</strong> Botswana, Kenya, Mozambique, Namibia, Rwanda, South Africa, Tanzania, Uganda, Zambia, Zimbabwe
+                        </p>
+                        <p><strong>
+Popular package:</strong> The Hemingway Wing Safari, Kenya, fourteen days, from $13,175 per person.</p>
+                        <p>
+                            <strong>
+Philanthropy:</strong> Its charitable endeavors are impressive, with visits to the Micato-AmericaShare Harambee Community Center a highlight for many clients. In addition, every safari sold puts one Kenyan child in school through
+                            Micato-AmericaShare’s One for One program.
+                        </p>
+                        <p><strong>
+What They Do Best:</strong> Impeccable service from start to finish alongside excellent community projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-7" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="https://artofsafari.travel/wp-content/uploads/2016/10/Tanzania_SouthSelousGameReserve_SandRiverSelousViewFromDeck1-600x600.jpg" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Nomad Tanzania</h2>
+                        <p>Nomad Tanzania owns and operates its own collection of unique camps and privately guided safaris across the most geographically diverse areas in Tanzania. It also offers an efficient ground-handling and safari-planning service
+                            throughout Tanzania and Zanzibar and uses its experience and approach to recommend other camps that it feels meet its exacting standards. They have a reputation for employing excellent guides and for always going the extra
+                            mile for guests.</p>
+                        <p>
+                            All of its team members have a deep love for the African bush and a desire to share their passion with others. Its website has some sample itineraries for inspiration, but each trip is fully customized.</p>
+
+                        <p><strong>Destinations:</strong> Kenya, Tanzania
+
+                        </p>
+                        <p><strong>Popular package:</strong> Serengeti Safari, eight nights, from $5,000.</p>
+                        <p><strong>
+
+Philanthropy:</strong> A microfinance scheme allows guides to purchase their own safari vehicles, which Nomad then rents from them. Nomad has also introduced steel water bottles for all guests so as to reduce the use of plastic. The Nomad Trust raises
+                            charitable donations for a range of community projects.</p>
+                        <p>
+                            <strong>
+What they do best:</strong> Excellent guides, camps, comprehensive itineraries, and service in a specialized region.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-8" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="https://artofsafari.travel/wp-content/uploads/2016/12/Botswana_OkavangoDelta_andBeyondSandibe_Wildlife_Walking6-600x600.jpg" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>&Beyond</h2>
+                        <p>This luxury tour operator offers ready-made trips and tours to all parts of Southern or East Africa or can tailor a safari to your needs. It offers some of the best destinations and accommodations in Africa (and manages thirty-three
+                            of its own highly regarded properties) from the Okavango Delta to remote Indian Ocean islands.</p>
+                        <p> Unique trips for the discerning traveler can be planned around learning, conservation, and sustainability, or “luxury in the bush,” which includes more holistic activities, such as yoga safaris. This outfitter also offers active
+                            adventures such as rhino darting for conservation, walking safaris, and turtle-hatching expeditions.</p>
+                        <p><strong>
+Destinations:</strong> Botswana, Kenya, Madagascar, Malawi, Mauritius, Mozambique, Namibia, Rwanda, Seychelles, South Africa, Tanzania, Uganda, Zambia, Zimbabwe.
+                        </p>
+                        <p><strong>
+Popular packages:</strong> Treasures of Tanzania, eight nights, from $6,685; Grand Botswana, ten nights, from $9,967.
+                        </p>
+                        <p><strong>
+Philanthropy:</strong> It has raised and committed R100 million (US$11.5 million) to implement and operate projects in six African countries.
+                        </p>
+                        <p><strong>
+What they do best:</strong> Luxury in the bush, impeccable attention to detail, and honeymoons.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <section id="contact">
+        <footer>
+            <h2 class="header">Contact Us</h2>
+            <hr class="light">
+            <p>For enquiries and more details about TourKenya reach us through our contact information below</p>
+            <div class="row">
+                <div class="col-md-3" id="facebook">
+                    <i class="fa fa-facebook fa-2x fa-blue"></i>
+                </div>
+                <div class="col-md-3" id="skype">
+                    <i class="fa fa-skype fa-2x fa-blue"></i>
+                </div>
+                <div class="col-md-3" id="github">
+                    <i class="fa fa-github fa-2x fa-purple"></i>
+                </div>
+                <div class="col-md-3" id="phone">
+                    <i class="fa fa-phone fa-2x fa-green"></i>
+                </div>
+                <div class="col-md-3" id="fb">
+                    <h4 class="underlineTwo">Facebook</h4><span class="underline"></span>
+                </div>
+                <div class="col-md-3" id="sk">
+                    <h4 class="underlineTwo">Skype</h4><span class="underline"></span>
+                </div>
+                <div class="col-md-3" id="gt">
+                    <h4 class="underlineTwo">Github</h4><span class="underline"></span>
+                </div>
+                <div class="col-md-3" id="tp">
+                    <h4 class="underlineTwo">Telephone</h4><span class="underline"></span>
+                </div>
+                <div class="col-md-3" id="snapchat">
+                    <i class="fa fa-snapchat fa-2x fa-yellow"></i>
+                </div>
+                <div class="col-md-3" id="instagram">
+                    <i class="fa fa-instagram fa-2x fa-purple"></i>
+                </div>
+                <div class="col-md-3" id="whatsapp">
+                    <i class="fa fa-whatsapp fa-2x fa-green"></i>
+                </div>
+                <div class="col-md-3" id="windows">
+                    <i class="fa fa-windows fa-2x fa-blue"></i>
+                </div>
+                <div class="col-md-3" id="sp">
+                    <h4 class="underlineTwo">Snapchat</h4><span class="underline"></span>
+                </div>
+                <div class="col-md-3" id="ig">
+                    <h4 class="underlineTwo">Instagram</h4><span class="underline"></span>
+                </div>
+                <div class="col-md-3" id="wp">
+                    <h4 class="underlineTwo">Whatsapp</h4><span class="underline"></span>
+                </div>
+                <div class="col-md-3" id="ot">
+                    <h4 class="underlineTwo">Outlook</h4><span class="underline"></span>
+                </div>
+
+                <h2 class="header">Accepted forms of payment</h2>
+                <hr class="light">
+
+                <div class="cold-md-offset-6">
+                    <i class="fa fa-paypal fa-2x fa-blue"></i> <i class="fa fa-google-wallet fa-green fa-2x"></i> <i class="fa fa-cc-visa fa-2x fa-yellow"></i> <i class="fa fa-cc-mastercard fa-2x fa-red"></i>
+                    <i class="fa fa-cc-amex fa-2x"></i>
+                </div>
+
+
+            </div>
+        </footer>
+    </section>
+    <script src="js/jquery.gridder.min.js"></script>
+</body>
+
+</html>
