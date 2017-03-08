@@ -95,6 +95,9 @@
     height: 80px;
     width: 100px;
 }
+#elephants{
+padding:5px 0;
+}
 
 #header {
     background-color: white;
@@ -120,7 +123,9 @@
     position: absolute;
     text-align: center;
 }
-
+.list{
+  font-size:18px;
+}
 #myCarousel .nav a small {
     display: block;
 }
@@ -139,7 +144,7 @@ body {
     color: #222222;
 }
 section{
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 #main {
@@ -264,6 +269,7 @@ margin-left: 150px;
 .images_small{
   height:260px;
   width:278.516px;
+  box-shadow: 3px 3px 5px 6px #ccc;
 }
 .section1_header {
   position: relative;
