@@ -12,22 +12,54 @@
     <link href="styling/style.css" rel="stylesheet" type="text/css">
     <link href="styling/style1.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Sansita|Baloo|Cardo" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/npm.js"></script>
-    <script src="js/jquery.smoothState.min.js"></script>
-    <script src="js/star-rating.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="html5gallery/jquery.js"></script>
-    <script type="text/javascript" src="html5gallery/html5gallery.js"></script>
-    <script src="js/transportation.js" type="text/javascript"></script>
-    <script src="js/carousel.js" type="text/javascript"></script>
-    <script src="js/script1.js"></script>
     <link rel="shortcut icon" href="icon\kflag.ico" />
     <title>TourKenya</title>
+    <script type="text/javascript">
+        ;
+        (function() {
+            function id(v) {
+                return document.getElementById(v);
+            }
+
+            function loadbar() {
+                var ovrl = id("overlay"),
+                    prog = id("progress"),
+                    stat = id("progstat"),
+                    img = document.images,
+                    c = 0;
+                tot = img.length;
+
+                function imgLoaded() {
+                    c += 1;
+                    var perc = ((100 / tot * c) << 0) + "%";
+                    prog.style.width = perc;
+                    stat.innerHTML = "Loading " + perc;
+                    if (c === tot) return doneLoading();
+                }
+
+                function doneLoading() {
+                    ovrl.style.opacity = 0;
+                    setTimeout(function() {
+                        ovrl.style.display = "none";
+                    }, 1200);
+                }
+                for (var i = 0; i < tot; i++) {
+                    var tImg = new Image();
+                    tImg.onload = imgLoaded;
+                    tImg.onerror = imgLoaded;
+                    tImg.src = img[i].src;
+                }
+            }
+            document.addEventListener('DOMContentLoaded', loadbar, false);
+        }());
+    </script>
 </head>
 
 <body>
-
+    <div id="overlay">
+        <div id="progstat"></div>
+        <div id="progress"></div>
+    </div>
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -275,6 +307,10 @@
             </div>
         </section>
         <section class="attractions_brown">
+
+            <!-- <div class="glyphicon-left">
+              <span class="glyphicon glyphicon-menu-left" style="color:#F15A29;"></span>
+            </div>                    -->
             <div class="container">
                 <div class="row">
                     <h1 class="section2_header"><span>Wildlife<span></h1>
@@ -578,6 +614,16 @@
             </footer>
         </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/npm.js"></script>
+    <script src="js/jquery.smoothState.min.js"></script>
+    <script src="js/star-rating.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="html5gallery/jquery.js"></script>
+    <script type="text/javascript" src="html5gallery/html5gallery.js"></script>
+    <script src="js/transportation.js" type="text/javascript"></script>
+    <script src="js/carousel.js" type="text/javascript"></script>
+    <script src="js/script1.js"></script>
 </body>
 
 </html>

@@ -1,25 +1,29 @@
-#szlider {
-    width: 100%;
-    height: 15px;
-    border: 1px solid #000;
-    overflow: hidden;
+#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(0,0,0,0.9);
+  transition: 1s 0.4s;
 }
-
-#szliderbar {
-    width: 37%;
-    height: 15px;
-    border-right: 1px solid #000000;
-    background: #7777ee;
+#progress{
+  height:1px;
+  background:#fff;
+  position:absolute;
+  width:0;
+  top:50%;
 }
-
-#szazalek {
-    color: #000000;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
-    left: 25px;
-    position: relative;
-    top: -16px;
+#progstat{
+  font-size:0.7em;
+  letter-spacing: 3px;
+  position:absolute;
+  top:50%;
+  margin-top:-40px;
+  width:100%;
+  text-align:center;
+  color:#fff;
 }
 
 .item img {
@@ -288,7 +292,7 @@ section {
 .images_small {
     height: 260px;
     width: 278.516px;
-    box-shadow: 3px 3px 5px 6px #ccc;
+
 }
 
 .section1_header {
@@ -670,7 +674,4 @@ hr.light {
 .flex-container{
   display: flex;
   justify-content: center;
-}
-.form-control{
-  width:200px;
 }
