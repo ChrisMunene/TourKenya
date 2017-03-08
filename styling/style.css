@@ -150,6 +150,7 @@ body {
 
 section {
     padding-bottom: 30px;
+    margin-top: 0;
 }
 
 #main {
@@ -181,6 +182,7 @@ section {
     text-align: justify;
     ;
     margin-left: 150px;
+
 }
 
 #roll {
@@ -663,4 +665,9 @@ hr.light {
 }
 .emojis>li{
   padding:5px 0;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
 }
