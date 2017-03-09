@@ -4,9 +4,7 @@ h1{
 }
 .large-image{
   margin-left: auto;
-  background: url('img/accommodation/diani/diani1.jpg');
-  height: 700px;
-  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .top-title{
@@ -277,13 +275,9 @@ transition-delay:.2s;
   color: #FFFFFF;
   font-size: 22px;
   border-radius: 4px;
-  margin: 20px 0 0 550px;
+  margin-top: 15px;
 }
-#book-button{
-  height: 100px;
-  width: 1200px;
-  background-color: #b4975a;
-}
+
 
 .reviews{
   background-color:  rgba(180, 179, 173, 0.79);
@@ -300,4 +294,11 @@ transition-delay:.2s;
   font-size: 17px;
   font-weight: normal;
   line-height: 1.5em;
+}
+#book-button{
+  display: flex;
+  height: 90px;
+  width: 1200px;
+  background-color: #b4975a;
+  justify-content: center;
 }
