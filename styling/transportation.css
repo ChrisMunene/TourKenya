@@ -566,3 +566,18 @@ right: -6px;
 -webkit-transform: scaleX(-1);
 transform: scaleX(-1);
 }
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+.brown{
+  background: #977c44;
+  color:white;
+  animation-delay: 1s; 
+}
+.brown:hover{
+  background: red;
+  color:white;
+}
