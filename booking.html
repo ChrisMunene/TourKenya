@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Form With Labels On Top</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--    <link rel="stylesheet" href="styling/demo.css">-->
+    <link rel="stylesheet" href="styling/form-labels-on-top.css">
+    <script type="text/javascript">
+        ;
+        (function () {
+            function id(v) {
+                return document.getElementById(v);
+            }
+
+            function loadbar() {
+                var ovrl = id("overlay"),
+                    prog = id("progress"),
+                    stat = id("progstat"),
+                    img = document.images,
+                    c = 0;
+                tot = img.length;
+
+                function imgLoaded() {
+                    c += 1;
+                    var perc = ((100 / tot * c) << 0) + "%";
+                    prog.style.width = perc;
+                    stat.innerHTML = "Loading " + perc;
+                    if (c === tot) return doneLoading();
+                }
+
+                function doneLoading() {
+                    ovrl.style.opacity = 0;
+                    setTimeout(function () {
+                        ovrl.style.display = "none";
+                    }, 1200);
+                }
+                for (var i = 0; i < tot; i++) {
+                    var tImg = new Image();
+                    tImg.onload = imgLoaded;
+                    tImg.onerror = imgLoaded;
+                    tImg.src = img[i].src;
+                }
+            }
+            document.addEventListener('DOMContentLoaded', loadbar, false);
+        }());
+    </script>
+
+</head>
+
+<body>
+
+    <div id="overlay">
+        <div id="progstat"></div>
+        <div id="progress"></div>
+    </div>
+    <div class="container-fluid">
+        <br>
+        <nav id="siteNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand page-scroll" href="home.html">Home</a>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="accommodation-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <form class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search" name="q">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <li id="tourkenyalogo" style="margin-left:250px;">
+                            <img src="icon\flag2.png" alt="logo of the company" width="50" height="50"><span style="color:black;font-size:18px;font-family:'Sansita',sans-serif;">TourKenya<span>
+                    </li>
+                  </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="accommodation">
+                            <a href="accommodation.html">Accommodation</a>
+                        </li>
+                        <li id="transportation" style="background:#e6dac1;">
+                            <a href="transportation.html">Transportation</a>
+                        </li>
+                        <li id="reservation">
+                            <a href="booking.html">Make a Reservation</a>
+                        </li>
+                </div>
+        </nav>
+        </div>
+
+    <div class="main-content">
+
+
+        <form class="form-labels-on-top" method="post" action="#">
+
+            <div class="form-title-row">
+                <h1>Welcome To Kenya!</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Full name</span>
+                            <input type="text" name="name">
+                            </label>
+                </div>
+
+
+                <div class="form-row" id="plans">
+                    <label>
+                        <h4><span>Let us know your plans!</span></h4>
+                        <select name="dropdown">
+                            <option>Wildlife Safari</option>
+                            <option>Beach Destination</option>
+                            <option>Cultural Exploration</option>
+                            <option>Sight Seeing</option>
+                            <option>An All-Rounded Tour!</option>
+                            <option>Just Business</option>
+                            <option>Education</option>
+                            <option>Undecided</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="form-row" id="wildlife-safari">
+                    <label>
+                        <h4><span>Wildlife Safari</span></h4>
+                        <input type="checkbox" name="checkbox">Maasai mara
+                        <br>
+                        <input type="checkbox" name="checkbox">Longonot National Park
+                        <br>
+                        <input type="checkbox" name="checkbox">Amboseli National Park
+                        <br>
+                        <input type="checkbox" name="checkbox">Tsavo National Reserve
+                        <br>
+                        <input type="checkbox" name="checkbox">Other
+                    </label>
+                </div>
+                <div class="form-row" id="beach-destination">
+                    <label>
+                        <h4><span>Beach destinations</span></h4>
+                        <input type="checkbox" name="checkbox">Mombasa
+                        <br>
+                        <input type="checkbox" name="checkbox">Malindi
+                        <br>
+                        <input type="checkbox" name="checkbox">Diani
+                        <br>
+                        <input type="checkbox" name="checkbox">Lamu
+                        <br>
+                        <input type="checkbox" name="checkbox">Other
+                    </label>
+                </div>
+                <div class="form-row" id="cultural-exploration">
+                    <label>
+                        <h4><span>Cultural Exploration</span></h4>
+                        <input type="checkbox" name="checkbox">Maasai
+                        <br>
+                        <input type="checkbox" name="checkbox">Swahili
+                        <br>
+                        <input type="checkbox" name="checkbox">Kalenjin
+                        <br>
+                        <input type="checkbox" name="checkbox">Bomas of Kenya
+                        <br>
+                        <input type="checkbox" name="checkbox">Other
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <h4><span>Number of Travellers</span></h4></label>
+                    <div class="form-radio-buttons">
+
+                        <div>
+                            <label>
+                                <input type="radio" name="radio">
+                                <span>1-2</span>
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="radio">
+                                <span>3-4</span>
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="radio">
+                                <span>5-6</span>
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="radio">
+                                <span>6+</span>
+                            </label>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row" id="packages">
+                    <label>
+                        <h4><span>Day/Night Package</span></h4>
+                        <select name="dropdown">
+                            <option>Bronze Bowtie</option>
+                            <option>Silver Suit</option>
+                            <option>Golden Tux</option>
+                            <option>Platinum Paradise</option>
+                            <option>Create Your Own Package!</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="form-row" id="contacts">
+                    <h3>How can we reach you?</h3>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        <span>Country</span>
+                        <input type="text" name="country">
+                    </label>
+                    <label>
+                        <span>City</span>
+                        <input type="text" name="city">
+                    </label>
+                    <label>
+                        <span>Permanent Address</span>
+                        <input type="text" name="address">
+                    </label>
+                    <label>
+                        <span>Phone Number</span>
+                        <input type="number" name="phone">
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label><span></span></label>
+                    <div class="form-radio-buttons">
+
+                        <div>
+                            <label>
+                                <input type="radio" name="radio">
+                                <span>I accept the terms and conditions.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit">Submit</button>
+                </div>
+
+                </form>
+
+            </div>
+            <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
