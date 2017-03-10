@@ -575,7 +575,7 @@ transform: scaleX(-1);
 .brown{
   background: #977c44;
   color:white;
-  animation-delay: 1s; 
+  animation-delay: 1s;
 }
 .brown:hover{
   background: red;
