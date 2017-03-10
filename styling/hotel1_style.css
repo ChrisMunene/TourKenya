@@ -5,6 +5,7 @@ h1{
 .large-image{
   margin-left: auto;
   background-repeat: no-repeat;
+  width: 1170px;
 }
 
 .top-title{
@@ -24,7 +25,7 @@ h1{
 }
 #description-area{
   height: 450px;
-  width: 100%;
+  width: 1170px;
   background-color:  #f2f2ed;
 
 }
@@ -52,13 +53,15 @@ h1:before, h1:after {
     height: 1px;
     content: '\a0';
     background-color: black;
+
 }
 .activities h1{
-  width: 800px;
-  margin-left: 260px;
+  width: 670px;
+  margin-left: 250px;
+  padding-top: 15px;
 }
 .picture-area h1{
-  width: 800px;
+  width: 630px;
   margin-left: 260px;
   padding-top: 20px;
 }
@@ -70,11 +73,11 @@ h1 span{
   padding-left: 20px;
   padding-right: 20px;
 }
-.activities h1{
-  width: 800px;
-  margin-left: 260px;
+.reviews h1{
+  width: 670px;
+  margin-left: 250px;
+  padding-top: 15px;
 }
-
 
 .description p{
   line-height: 2.2em;
@@ -151,6 +154,7 @@ h1 span{
 
 .activities{
   width: 100%;
+  background-color: white;
 }
 .activity{
   height: 320px;
@@ -168,16 +172,25 @@ h1 span{
 }
 .picture-area{
   background-color:  #e6dac1;
-  height: 600px;
+  height: 650px;
+  width: 1170px;
 }
+
 .picarea1{
   padding: 10px 0 10px 0;
   margin-bottom: 5px;
   height: 280px;
 }
+@media (min-width: 768px){
+  .picture-area{
+    padding: 0px 0 0px 0;
+    margin-bottom: 5px;
+    height: 700px;
+  }
+}
 .hovereffect {
-    width: 300;
-    height: 250px;
+    width: 270;
+    height: 240px;
     float: left;
     overflow: hidden;
     position: relative;
@@ -281,12 +294,13 @@ transition-delay:.2s;
 
 .reviews{
   background-color:  rgba(180, 179, 173, 0.79);
-  padding: 20px 0 0 60px;
+  padding: 20px 0 0 20px;
   height: 400px;
+  width: 1170px;
 }
 .customer{
   height: 270px;
-  width: 300px;
+  width: 270px;
   border: 1px solid black;
   padding: 10px 20px 10px 30px;
 }
@@ -299,6 +313,282 @@ transition-delay:.2s;
   display: flex;
   height: 90px;
   width: 1200px;
-  background-color: #b4975a;
   justify-content: center;
+}
+#overlay {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 1s 0.4s;
+}
+
+#progress {
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    width: 0;
+    top: 50%;
+}
+
+#progstat {
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #b4975a;
+}
+
+
+
+.header {
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+}
+
+
+.carousel_info_light {
+    color: rgb(255, 84, 0);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    font-family: 'Lobster', cursive;
+}
+
+hr.light {
+    border-color: #ffffff;
+    border-width: 3px;
+    max-width: 50px;
+    margin-left: 550px;
+}
+
+hr.light {
+    border-color: white;
+}
+
+
+.navbar-default {
+    background-color: white;
+    border-color: rgba(34, 34, 34, 0.05);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: #ffffff;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
+    color: #00c5fa;
+}
+
+.navbar-default .navbar-header .navbar-toggle {
+    font-weight: 700;
+    font-size: 12px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.navbar-default .nav>li>a, .navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    color: #222222;
+}
+
+.navbar-default .nav>li>a:hover, .navbar-default .nav>li>a:focus:hover {
+    color: #F05F40;
+}
+
+.navbar-default .nav>li.active>a, .navbar-default .nav>li.active>a:focus {
+    color: #F05F40 !important;
+    background-color: transparent;
+}
+
+.navbar-default .nav>li.active>a:hover, .navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .navbar-default {
+
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+
+}
+@media (max-width: 400px){
+  #tourkenyalogo{
+    display: none;
+  }
+}
+
+
+#contact {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+}
+
+#contact_us {
+    margin-left: 540px;
+}
+
+i.fa:hover {
+    cursor: pointer;
+    color: rgb(255, 84, 0)
+}
+
+section {
+    background-color: rgb(48, 48, 48);
+    position: relative;
+    padding: 1px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+
+
+.underlineTwo {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+
+#facebook:hover ~ #fb .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#skype:hover ~ #sk .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#github:hover ~ #gt .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#phone:hover ~ #tp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
+#facebook:hover ~ #fb .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#github:hover ~ #gt .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#skype:hover ~ #sk .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#phone:hover ~ #tp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#snapchat:hover ~ #sp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#instagram:hover ~ #ig .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#whatsapp:hover ~ #wp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#windows:hover ~ #ot .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
+#snapchat:hover ~ #sp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#instagram:hover ~ #ig .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#whatsapp:hover ~ #wp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#windows:hover ~ #ot .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.fa-green{
+    color: rgb(0, 254, 48)
+}
+
+.fa-blue{
+    color: rgb(0, 219, 206)
+}
+.fa-yellow{
+    color: rgb(254, 244, 0)
+}
+.fa-purple{
+    color: rgb(249, 0, 231)
+}
+.fa-red{
+    color: rgb(255, 0, 0)
 }
