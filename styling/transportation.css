@@ -1,0 +1,583 @@
+#overlay {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 1s 0.4s;
+}
+
+#progress {
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    width: 0;
+    top: 50%;
+}
+
+#progstat {
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.flex-container{
+  display: flex;
+  justify-content: flex-start;
+  width:400px;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #b4975a;
+    color: #ccc;
+    font-family: 'Lobster', cursive;
+    overflow-x: hidden;
+    background-size: cover;
+}
+
+h2, body h2 {
+    margin-top: 30px;
+}
+#page_info{
+    margin-top: 50px;
+}
+
+.header {
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+}
+
+a {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    color: #ffffff;
+}
+
+a:hover, a:focus {
+    color: #ffffff;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: rgba(34, 34, 34, 0.05);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: #ffffff;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
+    color: #00c5fa;
+}
+
+.navbar-default .navbar-header .navbar-toggle {
+    font-weight: 700;
+    font-size: 12px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.navbar-default .nav>li>a, .navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    color: #222222;
+}
+
+.navbar-default .nav>li>a:hover, .navbar-default .nav>li>a:focus:hover {
+    color: #F05F40;
+}
+
+.navbar-default .nav>li.active>a, .navbar-default .nav>li.active>a:focus {
+    color: #F05F40 !important;
+    background-color: transparent;
+}
+
+.navbar-default .nav>li.active>a:hover, .navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .navbar-default {
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+hr.light {
+    border-color: #ffffff;
+    border-width: 3px;
+    max-width: 50px;
+    margin-left: 670px;
+}
+
+#accommodation, #reservation, #transportation {
+    color: rgb(255, 255, 255);
+}
+
+#tourkenyalogo {
+    margin-left: 550px;
+}
+
+#contact {
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+}
+
+#contact_us {
+    margin-left: 540px;
+}
+
+i.fa:hover {
+    cursor: pointer;
+    color: rgb(255, 84, 0)
+}
+
+.container {
+    text-align: center;
+}
+
+.gridder {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    font-size: 0;
+    text-align: center;
+    margin-left: 80px;
+}
+
+.gridder .gridder-list {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+    width: 350px;
+    margin-bottom: 0.5%;
+    margin-right: 0.5%;
+}
+
+.gridder .gridder-list .image {
+    background-color: #313131;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 250px;
+    position: relative;
+}
+
+.gridder .overlay {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    color: #FFF;
+    line-height: 130%;
+    text-align: left;
+}
+
+.gridder .overlay .title {
+    font-weight: 800;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.gridder .overlay .description {
+    font-weight: 300;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.gridder .gridder-list, .gridder .gridder-show {
+    font-size: 12px;
+}
+
+.gridder .selectedItem:after {
+    content: ' ';
+    display: block;
+    border-bottom: 10px solid #222;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0%;
+    position: absolute;
+    top: 101%;
+    width: 0;
+    left: 43%;
+    margin-bottom: -4px;
+}
+
+.gridder.hasSelectedItem .gridder-list:not(.selectedItem) {
+    opacity: .2;
+}
+
+.gridder-show {
+    padding: 4%;
+    background: #222;
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 0.5%;
+    text-align: left;
+    color: #CCC;
+}
+
+.gridder-show img {
+    width: 100%;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gridder-content {
+    display: none;
+}
+
+.gridder-navigation .gridder-nav {
+    height: 77px;
+    padding: 0;
+    position: absolute;
+    width: 32px;
+    z-index: 1;
+    background-color: #ffffff;
+    background-image: linear-gradient(top, #3e3e3e, #333);
+    border: 1px solid #141414;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06), 1px 1px 0 rgba(255, 255, 255, 0.03), -1px -1px 0 rgba(0, 0, 0, 0.02), inset 1px 1px 0 rgba(255, 255, 255, 0.05);
+    color: #aaa !important;
+    cursor: pointer !important;
+    display: inline-block;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#303030', EndColorStr='#262626');
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 5px;
+    outline: 0;
+    text-align: center;
+    text-decoration: none !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: normal;
+    word-wrap: normal;
+    top: 50%;
+    margin-top: -40px;
+    overflow: hidden;
+}
+
+.gridder-navigation .gridder-nav span {
+    display: block;
+    bottom: 0;
+    height: 23px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 14px;
+}
+
+.gridder-navigation .gridder-nav.prev {
+    left: -6px;
+    color: rgb(0, 254, 56)
+}
+
+.gridder-navigation .gridder-nav.prev span {
+    color: rgb(0, 254, 56)
+}
+
+.gridder-navigation .gridder-nav.next {
+    right: -6px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    color: rgb(0, 254, 56)
+}
+
+.gridder-navigation .gridder-nav.next span {
+    color: rgb(0, 254, 56)
+}
+
+.gridder-navigation .gridder-nav:hover {
+    background: #3d3d3d;
+}
+
+.gridder-navigation .gridder-close {
+    cursor: pointer;
+    height: 30px;
+    padding: 7px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    z-index: 2;
+    color: rgb(0, 254, 56)
+}
+
+.gridder-navigation .gridder-close:hover {
+    color: #ff0000;
+}
+
+span.underline {
+    background-color: #ff5400;
+    /* same as link color */
+    display: block;
+    height: 1px;
+    width: 20%;
+    padding: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    margin-left: 60px;
+}
+
+.underlineTwo {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    margin-left: -150px;
+}
+
+
+#facebook:hover ~ #fb .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#skype:hover ~ #sk .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#github:hover ~ #gt .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#phone:hover ~ #tp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
+#facebook:hover ~ #fb .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#github:hover ~ #gt .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#skype:hover ~ #sk .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#phone:hover ~ #tp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#snapchat:hover ~ #sp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#instagram:hover ~ #ig .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#whatsapp:hover ~ #wp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#windows:hover ~ #ot .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#snapchat:hover ~ #sp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#instagram:hover ~ #ig .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#whatsapp:hover ~ #wp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#windows:hover ~ #ot .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
+#wilderness:hover ~ #wildernesstext .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+#wilderness:hover ~ #wildernesstext .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#african:hover ~ #africantext .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+#african:hover ~ #africantext .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#uber:hover ~ #ubertext .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+#uber:hover ~ #ubertext .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#little:hover ~ #littletext .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+#little:hover ~ #littletext .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#gamewatchers:hover ~ #watcherstext .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+#gamewatchers:hover ~ #watcherstext .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+#micato:hover ~ #micatotext .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+#micato:hover ~ #micatotext .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#nomad:hover ~ #nomadtext .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+#nomad:hover ~ #nomadtext .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#andbeyond:hover ~ #andbeyondtext .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+#andbeyond:hover ~ #andbeyondtext .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.fa-green {
+    color: rgb(0, 254, 48)
+}
+
+.fa-blue {
+    color: rgb(0, 219, 206)
+}
+
+.fa-yellow {
+    color: rgb(254, 244, 0)
+}
+
+.fa-purple {
+    color: rgb(249, 0, 231)
+}
+
+.fa-red {
+    color: rgb(255, 0, 0)
+}
+
+
+section .underline{
+    margin-left: 130px;
+}
+
+section .underlineTwo{
+    margin-left: 15px;
+}
+#right{
+right: -6px;
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+}
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+.brown{
+  background: #977c44;
+  color:white;
+  animation-delay: 1s; 
+}
+.brown:hover{
+  background: red;
+  color:white;
+}

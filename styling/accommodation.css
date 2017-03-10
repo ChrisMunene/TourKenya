@@ -1,56 +1,69 @@
-*{
-    font-family: sans-serif;
+#overlay {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 1s 0.4s;
+}
+
+#progress {
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    width: 0;
+    top: 50%;
+}
+
+#progstat {
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
 }
 
 html, body {
     height: 100%;
     width: 100%;
-    background-color: rgb(255, 99, 0);
+    background-color: #b4975a;
 }
 
-p{
+p {
     color: white;
 }
 
-.header{
+.header {
+    margin-left: 30px;
     color: rgb(255, 255, 255);
 }
 
-hr {
+
+.carousel_info_light {
+    color: rgb(255, 84, 0);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    font-family: 'Lobster', cursive;
+}
+
+hr.light {
     border-color: #ffffff;
     border-width: 3px;
     max-width: 50px;
-    margin-left: 7px;
+    margin-left: 550px;
 }
 
 hr.light {
     border-color: white;
-}
-
-.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-}
-.rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1.1em;
-  font-size: 30px;
-  color: rgb(254, 244, 0)
-}
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
-}
-
-#transportation{
-    background-color: #ff2600;
-}
-
-
-#reservation{
-    background-color: #2bff00;
 }
 
 a {
@@ -62,10 +75,6 @@ a {
 
 a:hover, a:focus {
     color: #ffffff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .navbar-default {
@@ -104,11 +113,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .nav>li>a:hover, .navbar-default .nav>li>a:focus:hover {
-    color: #00d1ff;
+    color: #F05F40;
 }
 
 .navbar-default .nav>li.active>a, .navbar-default .nav>li.active>a:focus {
-    color: #00f7ff !important;
+    color: #F05F40 !important;
     background-color: transparent;
 }
 
@@ -123,11 +132,171 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-#accommodation, #reservation, #transportation{
+#accommodation, #reservation, #transportation {
     color: rgb(255, 255, 255);
 }
-#contact{
+
+#tourkenyalogo {
+    margin-left: 550px;
+}
+
+#contact {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+
+#contact_us {
+    margin-left: 540px;
+}
+
+i.fa:hover {
+    cursor: pointer;
+    color: rgb(255, 84, 0)
+}
+
+section {
+    background-color: rgb(48, 48, 48);
+    position: relative;
+    padding: 1px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+span.underline {
+    background-color: #ff5400;
+    /* same as link color */
+    display: block;
+    height: 1px;
+    width: 60%;
+    padding: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    margin-left: 50px;
+}
+
+.underlineTwo {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+
+#facebook:hover ~ #fb .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#skype:hover ~ #sk .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#github:hover ~ #gt .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#phone:hover ~ #tp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
+#facebook:hover ~ #fb .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#github:hover ~ #gt .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#skype:hover ~ #sk .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#phone:hover ~ #tp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#snapchat:hover ~ #sp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#instagram:hover ~ #ig .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#whatsapp:hover ~ #wp .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#windows:hover ~ #ot .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
+#snapchat:hover ~ #sp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#instagram:hover ~ #ig .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#whatsapp:hover ~ #wp .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+#windows:hover ~ #ot .underlineTwo {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.fa-green{
+    color: rgb(0, 254, 48)
+}
+
+.fa-blue{
+    color: rgb(0, 219, 206)
+}
+.fa-yellow{
+    color: rgb(254, 244, 0)
+}
+.fa-purple{
+    color: rgb(249, 0, 231)
+}
+.fa-red{
+    color: rgb(255, 0, 0)
 }
