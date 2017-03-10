@@ -6,7 +6,7 @@
   <!--Load bootsrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link href="styling/acc_style.css" rel="stylesheet" type="text/css">
+  <link href="styling/hotel1_style.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/script_h.js" type="javascript/text"></script>
@@ -16,8 +16,93 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <title>Mara FairMount Hotel</title>
 </head>
+<script type="text/javascript">
+  ;
+  (function() {
+    function id(v) {
+      return document.getElementById(v);
+    }
 
-<body>
+    function loadbar() {
+      var ovrl = id("overlay"),
+        prog = id("progress"),
+        stat = id("progstat"),
+        img = document.images,
+        c = 0;
+      tot = img.length;
+
+      function imgLoaded() {
+        c += 1;
+        var perc = ((100 / tot * c) << 0) + "%";
+        prog.style.width = perc;
+        stat.innerHTML = "Loading " + perc;
+        if (c === tot) return doneLoading();
+      }
+
+      function doneLoading() {
+        ovrl.style.opacity = 0;
+        setTimeout(function() {
+          ovrl.style.display = "none";
+        }, 1200);
+      }
+      for (var i = 0; i < tot; i++) {
+        var tImg = new Image();
+        tImg.onload = imgLoaded;
+        tImg.onerror = imgLoaded;
+        tImg.src = img[i].src;
+      }
+    }
+    document.addEventListener('DOMContentLoaded', loadbar, false);
+  }());
+</script>
+<link rel="shortcut icon" href="icon\kflag.ico" />
+<title>TourKenya: Hotels and Resorts</title>
+</head>
+
+<body id="page-top">
+  <div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+  </div>
+  <nav id="siteNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+
+
+      <div class="navbar-header">
+        <a class="navbar-brand page-scroll" href="home.html">Home</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="accommodation-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="q">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </div>
+            </form>
+          </li>
+          <li id="tourkenyalogo" style="margin-left:250px;">
+            <img src="icon\flag2.png" alt="logo of the company" width="50" height="50"><span style="color:black;font-size:18px;font-family:'Sansita',sans-serif;">TourKenya<span>
+              </li>
+            </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                  <li id="accommodation" style="background:#e6dac1;">
+                      <a href="accommodation.html" class="active">Accommodation</a>
+                  </li>
+                  <li id="transportation">
+                      <a href="transportation.html">Transportation</a>
+                  </li>
+                  <li id="reservation">
+                      <a href="booking.html">Make a Reservation</a>
+                  </li>
+            </div>
+          </div>
+      </nav>
+
   <div class="large-image" style="background: url('img/accommodation/mara/mara1.jpg'); height: 370px;">
     <div class="top-title">
       TourKenya
@@ -28,226 +113,227 @@
     <div class="row">
       <div class="col-md-8">
         <div class="description">
-          <h1><span>Mara</span></h1></br>
-          <p>The Fairmont Mara Safari Club, a luxury Masai Mara resort hotel in Kenya, re-opened in 2009 following an extensive renovation program. Surrounded on three sides by the breathtaking Mara River, and on the edge of the world’s Seventh “New” Wonder
-            of the World – the Masai Mara - Fairmont Mara Safari Club is the epitome of tented luxury. A Top 20 Luxury Resort by Travel & Leisure Magazine The Fairmont is a host to a number of fine dining, safari and outdoor activities. The main Masai
-            Mara lodge at the center of camp hosts an indoor restaurant, bar and library with Internet access to keep the relatives up to date with safari adventures. A spacious outside deck overhangs the river and leads to a swimming pool, complete with
-            bar and private massage tents. </p><br>
-          <button class="galary-button" style="vertical-align:middle"><span><a href="#gallery">Gallery</a></span></button><br>
+          <h1><span>Mara</span></h1>
+            </br>
+            <p>The Fairmont Mara Safari Club, a luxury Masai Mara resort hotel in Kenya, re-opened in 2009 following an extensive renovation program. Surrounded on three sides by the breathtaking Mara River, and on the edge of the world’s Seventh “New” Wonder
+              of the World – the Masai Mara - Fairmont Mara Safari Club is the epitome of tented luxury. A Top 20 Luxury Resort by Travel & Leisure Magazine The Fairmont is a host to a number of fine dining, safari and outdoor activities. The main Masai
+              Mara lodge at the center of camp hosts an indoor restaurant, bar and library with Internet access to keep the relatives up to date with safari adventures. A spacious outside deck overhangs the river and leads to a swimming pool, complete
+              with bar and private massage tents. </p><br>
+            <button class="galary-button" style="vertical-align:middle"><span><a href="#gallery">Gallery</a></span></button><br>
+      </div>
+    </div>
+    <!-- quick links -->
+    <div class="col-md-4">
+      <div id="links">
+        <div class="quick-links"><a href="#">
+           Link one</a><br>
+        </div>
+        <div class="quick-links"><a href="#">
+           Link one</a><br>
+        </div>
+        <div class="quick-links"><a href="#">
+           Link one</a><br>
+        </div>
+        <div class="quick-links"><a href="#">
+           Link one</a><br>
         </div>
       </div>
-      <!-- quick links -->
-      <div class="col-md-4">
-        <div id="links">
-          <div class="quick-links"><a href="#">
-           Link one</a><br>
+    </div>
+    </div>
+    </div>
+    <!-- activities -->
+    <div class="activities">
+      <h1><span>Activities</span></h1><br>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="activity">
+            <img src="img/accommodation/mara/activities/nairobi-urban-adventures.jpg" class="activity4"></br>
+            <h4>Nairobi Urban Adventures</h4>
+            <p>Nairobi, Nairobi Kenya 0.0 km from Fairmont The Norfolk</p>
           </div>
-          <div class="quick-links"><a href="#">
-           Link one</a><br>
+        </div>
+        <div class="col-md-4">
+          <div class="activity">
+            <img src="img/accommodation/mara/activities/summited-mt-kenya-in.jpg" class="activity4"></br>
+            <h4>Bushtroop Tours and Safaris</h4>
+            <p>Moi Avenue Nairobi Sonalux House 5th Floor, Nairobi 244 Kenya 1.4 km from Fairmont The Norfolk</p>
           </div>
-          <div class="quick-links"><a href="#">
-           Link one</a><br>
+        </div>
+        <div class="col-md-4">
+          <div class="activity">
+            <img src="img/accommodation/mara/activities/julius-tact-safaris.jpg" class="activity4"></br>
+            <h4>Private Day Trips</h4>
+            <p>Julius Tact Safaris</p>
           </div>
-          <div class="quick-links"><a href="#">
-           Link one</a><br>
+        </div>
+      </div><br>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="activity">
+            <img src="img/accommodation/mara/activities/natural-world-kenya-safaris.jpg" class="activity3"></br>
+            <h4>Natural World Kenya Safaris</h4>
+            <p>Nairobi 80100 Kenya 0.9 km from Fairmont The Norfolk</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="activity">
+            <img src="img/accommodation/mara/activities/white-rhinos-in-lake.jpg" class="activity2"></br>
+            <h4>It Started in Africa</h4>
+            <p>0.8 km from Fairmont The Norfolk</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="activity">
+            <img src="img/accommodation/mara/activities/simba-holidays-private.jpg" class="activity1"></br>
+            <h4>Simba Holidays - Day Tours</h4>
+            <p>0.5 km from Fairmont The Norfolk</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- activities -->
-  <div class="activities">
-    <h1><span>Activities</span></h1><br>
+    <!-- gallery -->
     <div class="row">
-      <div class="col-md-4">
-        <div class="activity">
-          <img src="img/accommodation/diani/activities/wasini.jpg" class="activity4"></br>
-          <h4>Nairobi Urban Adventures</h4>
-          <p>Nairobi, Nairobi Kenya 0.0 km from Fairmont The Norfolk</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="activity">
-          <img src="img/accommodation/diani/activities/hippo-in-mzima-springs.jpg" class="activity4"></br>
-          <h4>Dream Kenya Safaris</h4>
-          <p>Centre point, Nakumatt shopping <br>centre, Diani Beach, Ukunda<br> 80401 Kenya1.9 km from The<br> Maji Beach Boutique Hotel</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="activity">
-          <img src="img/accommodation/diani/activities/marco-polo-safaris.jpg" class="activity4"></br>
-          <h4>Marco Polo Safaris</h4>
-          <p>Diani Beach, Ukunda 80400<br> Kenya 10.3 km from The <br>Maji Beach Boutique Hotel</p>
-        </div>
-      </div>
-    </div><br>
+      <div class="picture-area col-xs-12">
+        <h1><span id="gallery">Gallery</span></h1>
+        <div class="picarea1">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="img/accommodation/mara/entrance.jpg" alt="">
+              <div class="overlay">
+                <h2>Entrance</h2>
+                <a class="info" href="#"> Make reservation</a>
+              </div>
+            </div>
+          </div>
 
-    <div class="row">
-      <div class="col-md-4">
-        <div class="activity">
-          <img src="img/accommodation/diani/activities/leisure-golf-club.jpg" class="activity3"></br>
-          <h4>Leisure Golf Club</h4>
-          <p>Diani Beach, Ukunda 80100<br> Kenya 0.7 km from The <br>Maji Beach Boutique Hotel</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="activity">
-          <img src="img/accommodation/diani/activities/skydive-diani.jpg" class="activity2"></br>
-          <h4>Skydive In Diani</h4>
-          <p>Diani Beach Road, Diani Beach,<br> Ukunda 80401 Kenya 1.8 km from<br> The Maji Beach Boutique Hotel</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="activity">
-          <img src="img/accommodation/diani/activities/beach.jpg" class="activity1"></br>
-          <h4>Diani Beach</h4>
-          <p>Diani Beach, Ukunda 80400 <br>Kenya 0.9 km from The <br>Maji Beach Boutique Hotel</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- gallery -->
-  <div class="row">
-    <div class="picture-area col-xs-12">
-      <h1><span id="gallery">Gallery</span></h1>
-      <div class="picarea1">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="hovereffect">
-            <img class="img-responsive" src="img/accommodation/mara/entrance.jpg" alt="">
-            <div class="overlay">
-              <h2>Entrance</h2>
-              <a class="info" href="#"> Make reservation</a>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="img/accommodation/mara/mara2.jpg" alt="">
+              <div class="overlay">
+                <h2>Rooms</h2>
+                <p class="icon-links">
+                  <a class="info" href="#">Make reservation</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="img/accommodation/mara/tent.jpg" alt="">
+              <div class="overlay">
+                <h2>Tents</h2>
+                <p class="icon-links">
+                  <a class="info" href="#">Make reservation</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="img/accommodation/mara/mara4.jpg" alt="">
+              <div class="overlay">
+                <h2>Rooms</h2>
+                <p class="icon-links">
+                  <a class="info" href="#">Make reservation</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="hovereffect">
-            <img class="img-responsive" src="img/accommodation/mara/mara2.jpg" alt="">
-            <div class="overlay">
-              <h2>Rooms</h2>
-              <p class="icon-links">
-                <a class="info" href="#">Make reservation</a>
-              </p>
+        <div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="img/accommodation/mara/mara3.jpg" alt="">
+              <div class="overlay">
+                <h2>Jacuzzi</h2>
+                <a class="info" href="#"> Make reservation</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="hovereffect">
-            <img class="img-responsive" src="img/accommodation/mara/tent.jpg" alt="">
-            <div class="overlay">
-              <h2>Tents</h2>
-              <p class="icon-links">
-                <a class="info" href="#">Make reservation</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="hovereffect">
-            <img class="img-responsive" src="img/accommodation/mara/mara4.jpg" alt="">
-            <div class="overlay">
-              <h2>Rooms</h2>
-              <p class="icon-links">
-                <a class="info" href="#">Make reservation</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="hovereffect">
-            <img class="img-responsive" src="img/accommodation/mara/mara3.jpg" alt="">
-            <div class="overlay">
-              <h2>Jacuzzi</h2>
-              <a class="info" href="#"> Make reservation</a>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="img/accommodation/diani/room1.jpg" alt="">
+              <div class="overlay">
+                <h2>Rooms</h2>
+                <p class="icon-links">
+                  <a class="info" href="#">Make reservation</a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="hovereffect">
-            <img class="img-responsive" src="img/accommodation/diani/room1.jpg" alt="">
-            <div class="overlay">
-              <h2>Rooms</h2>
-              <p class="icon-links">
-                <a class="info" href="#">Make reservation</a>
-              </p>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="img/accommodation/diani/room2.jpg" alt="">
+              <div class="overlay">
+                <h2>Rooms</h2>
+                <p class="icon-links">
+                  <a class="info" href="#">Make reservation</a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="hovereffect">
-            <img class="img-responsive" src="img/accommodation/diani/room2.jpg" alt="">
-            <div class="overlay">
-              <h2>Rooms</h2>
-              <p class="icon-links">
-                <a class="info" href="#">Make reservation</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="hovereffect">
-            <img class="img-responsive" src="img/accommodation/diani/room3.jpg" alt="">
-            <div class="overlay">
-              <h2>Rooms</h2>
-              <p class="icon-links">
-                <a class="info" href="#">Make reservation</a>
-              </p>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="img/accommodation/diani/room3.jpg" alt="">
+              <div class="overlay">
+                <h2>Rooms</h2>
+                <p class="icon-links">
+                  <a class="info" href="#">Make reservation</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- reviews -->
-  <div class="reviews">
-    <div class="row">
-      <div class="col-xs-6 col-md-4">
-        <div class="customer">
-          <div class="media">
-            <div class="media-body">
-              <img class="d-flex mr-3" src="img/reviews/rev2.jpg" alt="Generic placeholder image" height="50px" width="50px">
-              <h5 class="mt-0">McDowell Podson</h5>
-              <q>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+    <!-- reviews -->
+    <div class="reviews">
+      <div class="row">
+        <div class="col-xs-6 col-md-4">
+          <div class="customer">
+            <div class="media">
+              <div class="media-body">
+                <img class="d-flex mr-3" src="img/reviews/rev2.jpg" alt="Generic placeholder image" height="50px" width="50px">
+                <h5 class="mt-0">McDowell Podson</h5>
+                <q>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
               </q>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-xs-6 col-md-4">
-        <div class="customer">
-          <div class="media">
+        <div class="col-xs-6 col-md-4">
+          <div class="customer">
+            <div class="media">
+              <div class="media-body">
+                <img class="d-flex mr-3" src="img/reviews/rev1.jpg" alt="Generic placeholder image" height="50px" width="50px">
+                <h5 class="mt-0">Alice Consuella</h5>
+                <q>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+          </q>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-4">
+          <div class="customer" <div class="media">
             <div class="media-body">
-              <img class="d-flex mr-3" src="img/reviews/rev1.jpg" alt="Generic placeholder image" height="50px" width="50px">
-              <h5 class="mt-0">Alice Consuella</h5>
+              <img class="d-flex mr-3" src="img/reviews/rev3.png" alt="Generic placeholder image" height="50px" width="50px">
+              <h5 class="mt-0">Mary Augurella</h5>>
               <q>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
           </q>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-xs-6 col-md-4">
-        <div class="customer" <div class="media">
-          <div class="media-body">
-            <img class="d-flex mr-3" src="img/reviews/rev3.png" alt="Generic placeholder image" height="50px" width="50px">
-            <h5 class="mt-0">Mary Augurella</h5>>
-            <q>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-          </q>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <br>
-  <!-- booking button -->
-  <div id="book-button">
-    <button id="booking" class="book-button"><a href="booking.html">Book Now</a></button>
-  </div>
-  </div>
+    <br>
+    <!-- booking button -->
+    <div id="book-button">
+      <button id="booking" class="book-button"><a href="booking.html">Book Now</a></button>
+    </div>
+    </div>
 </body>
 
 </html>
