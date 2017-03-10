@@ -27,7 +27,11 @@
     text-align: center;
     color: #fff;
 }
-
+@media(max-width:1000px) {
+    #tourkenyalogo {
+        display: none;
+    }
+}
 html, body {
     height: 100%;
     width: 100%;
