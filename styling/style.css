@@ -36,7 +36,7 @@
 .navbar-default {
     background-color: white;
     border-color: rgba(34, 34, 34, 0.05);
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family:'Sansita',sans-serif;
     -webkit-transition: all 0.35s;
     -moz-transition: all 0.35s;
     transition: all 0.35s;
@@ -54,17 +54,17 @@
 }
 
 .navbar-default .navbar-header .navbar-toggle {
-    font-weight: 700;
-    font-size: 12px;
-    color: #222222;
+    /*font-weight: 700;*/
+    font-size: 15px;
+    /*color: #222222;*/
     text-transform: uppercase;
 }
 
 .navbar-default .nav>li>a, .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
-    font-weight: 700;
+    /*font-weight: 700;
     font-size: 13px;
-    color: #222222;
+    color: #222222;*/
 }
 
 .navbar-default .nav>li>a:hover, .navbar-default .nav>li>a:focus:hover {
@@ -686,6 +686,7 @@ hr.light {
 
 .flex-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -702,4 +703,69 @@ hr.light {
 #email {
     display: inline-flex;
     margin: 0;
+}
+@media (max-width:1100px) {
+  .section_header,.section2_header {
+      position: relative;
+      text-align: center;
+      font-size: 40px;
+      text-align: center;
+  }
+
+  .section_header span,.section2_header span {
+      position: relative;
+      z-index: 1;
+  }
+
+  .section_header:before,.section2_header:before {
+      background: transparent;
+      display:none;
+  }
+
+  .section_header:after,.section2_header:after {
+      background: transparent;
+      display:none;
+  }
+
+  .section_header:before,.section2_header:before {
+      left: 0;
+  }
+
+  .section_header:after,.section2_header:after {
+      right: 0;
+  }
+  navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
 }

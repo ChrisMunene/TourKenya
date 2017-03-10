@@ -38,6 +38,35 @@
     }
 }
 
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #00c5fa;
+}
+
+.navbar-default {
+    font-family: 'Sansita', sans-serif;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: #ffffff;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.navbar-default .nav>li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #F05F40;
+}
+
+.navbar-default .nav>li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #F05F40 !important;
+    background-color: transparent;
+}
+
 body {
     background-color: #b4975a;
 }
