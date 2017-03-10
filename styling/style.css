@@ -79,21 +79,33 @@
 .navbar-default .nav>li.active>a:hover, .navbar-default .nav>li.active>a:focus:hover {
     background-color: transparent;
 }
-
-@media (min-width: 768px) {
-    .navbar-default {
-        background-color: transparent;
-        border-color: rgba(255, 255, 255, 0.3);
-    }
+@media(min-width:768px){
+  .navbar-default {
+      background-color: transparent;
+      border-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
+@media (max-width: 900px) {
+
+  .section_header:after{
+    background: transparent;
+  }
+}
 #uber-bar {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-size: 30px;
-    background: #b4975a;
-    margin: 0 104px;
-}
 
+}
+#header-bar{
+  display: flex;
+  width:1140px;
+  justify-content: center;
+  background: #b4975a;
+
+}
 #tag {
     font-size: 20px;
 }
@@ -676,12 +688,12 @@ hr.light {
     display: flex;
     justify-content: center;
 }
-#subscribe{
-    background: #b4975a;
 
+#subscribe {
+    background: #b4975a;
 }
+
 .form {
-    
     text-align: center;
     color: #222222;
     height: 200px;
