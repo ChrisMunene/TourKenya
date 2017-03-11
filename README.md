@@ -12,7 +12,7 @@ of the people in our target markets,and the massive potential of the tourism ind
 ##Specifications
 1.The site has multiple functions:
  
-  * For tourists, it is a planning and exploration platform where they can see all that the country has to offer. A prospective tourist has to create a profile where we will get their contact info and create an account. The account enables them to:
+  * For tourists, it is a planning and exploration platform where they can see all that the country has to offer. A prospective tourist has to create a profile where we will get their contact info and create an account and userID. The account enables them to:
   
     1.Track their bookings.
   
@@ -46,9 +46,30 @@ of the people in our target markets,and the massive potential of the tourism ind
     6.Ratings for the companies
   
     7.Discounts and offers, all provided to help one plan a wonderful vacation.
+    
+  * Specifications for the booking page:
+  
+    1. A user should enter their name and contacts.
+    
+    2. They should choose the type of tour/vacation they want i.e. places they are interested in visiting.
+    
+    3. They should enter the accommodations and transport companies of their choice.
+    
+    4. They should choose the packages from the companies they have selected if any.
+    
+    5. They should choose their duration of stay.
+    
+    6. They should enter the number and ages of people in their group.
+    
+    7. After the user has entered all necessary info and submitted their form, a ticket should be printed listing all their choices and the total cost.
+    
+    8. The user should be able to choose a payment method and to pay through the site.
+    
+    9. A printable ticket with all their bookings, payments and balance (if any) should be then sent to their user account. This is the ticket they will use on their travels. Their userID will be printed on the ticket and used to verify their tickets.
+
  
   * For the government and respective companies, it is an advertisement site and a platform to reachout to their customers before they even arrive.
-  A company that wants to be hosted will create a profile where we will get their contact info and create an account for a small hosting fee. This account enables them to:
+  A company that wants to be hosted will create a profile where we will get their contact info and create an account and companyID for a small hosting fee. This account enables them to:
  
     1.Create their own page that will featured on our main site. 
   
