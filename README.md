@@ -98,7 +98,7 @@ of the people in our target markets,and the massive potential of the tourism ind
  
    5.Get feedback from us and the consumers.
  
- 
+  * A feedback form for the users of our sites to reach out to us.
  
 
 ##Technologies Used
