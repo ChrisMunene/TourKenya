@@ -12,69 +12,70 @@ of the people in our target markets,and the massive potential of the tourism ind
 ##Specifications
 1.The site has multiple functions:
  
- **For tourists, it is a planning and exploration platform where they can see all that the country has to offer. A prospective tourist has to create a profile where we will get their contact info and create an account. The account enables them to:
+  * For tourists, it is a planning and exploration platform where they can see all that the country has to offer. A prospective tourist has to create a profile where we will get their contact info and create an account. The account enables them to:
   
-  1.Track their bookings.
+    1.Track their bookings.
   
-  2.View their reciepts and travel history.
+    2.View their reciepts and travel history.
   
-  3.Write reviews and ratings for the services they have experienced.
+    3.Write reviews and ratings for the services they have experienced.
   
-  4.Upload pictures and descriptions of new places they have discovered that aren't featured on the site.
+    4.Upload pictures and descriptions of new places they have discovered that aren't featured on the site.
   
-  5.Pay for all the services that will be provided on their vacation in one platform.
+    5.Pay for all the services that will be provided on their vacation in one platform.
   
-  6.Recommend a place to others
+    6.Recommend a place to others
   
-  7.Add their friends.
+    7.Add their friends.
   
-  8.Book their entire vacation!
+    8.Book their entire vacation!
   
-  After logging in, they can view and choose all the companies that facilitate their arrival and stay in the country. 
-  The site also provides:
-  1.Maps to the places(GPS)
+    After logging in, they can view and choose all the companies that facilitate their arrival and stay in the country. 
+    The site also provides:
+    
+    1.Maps to the places(GPS)
   
-  2.Live weather updates
+    2.Live weather updates
   
-  3.Ttransport updates
+    3.Transport updates
   
-  4.Price comparison
+    4.Price comparison
   
-  5.Consumer reviews
+    5.Consumer reviews
   
-  6.Ratings for the companies
+    6.Ratings for the companies
   
-  7.Discounts and offers, all provided to help one plan a wonderful vacation.
+    7.Discounts and offers, all provided to help one plan a wonderful vacation.
  
- **For the government and respective companies, it is an advertisement site and a platform to reachout to their customers before they even arrive.
- A company that wants to be hosted will create a profile where we will get their contact info and create an account for a small hosting fee. This account enables them to:
+  * For the government and respective companies, it is an advertisement site and a platform to reachout to their customers before they even arrive.
+  A company that wants to be hosted will create a profile where we will get their contact info and create an account for a small hosting fee. This account enables them to:
  
- 1.Create their own page that will featured on our main site. 
- 
- 2.Upload photos and descriptions of their services for prospective customers. They will upload their best photo/video to be featured on the homepage. All marketing will be done by us.
- 
- 3.We will handle all payments through the site o each company.
+    1.Create their own page that will featured on our main site. 
   
- 4.Get feedback from the customers or us.
+    2.Upload photos and descriptions of their services for prospective customers. They will upload their best photo/video to be featured on the homepage. All marketing will be done by us.
  
- 5.View the current market status.
- 
- 7.Track the traffic, number of bookings and reviews on their pages.
- 
- 8.View their strongest competition.
- 
- We will charge a small fee to handle all their payments and to make and feature videos for each company on the site as marketing. 
- As for the  government, each county will be advertised exclusively on its own page designed by our team, where it can:
+    3.We will handle all payments through the site o each company.
   
- 1.Have all its attractions featured in videos and photos all made by us.
+    4.Get feedback from the customers or us.
  
- 2.List all resorts and other companies within it.
+    5.View the current market status.
  
- 3.Have updated maps and weather reports.
+    7.Track the traffic, number of bookings and reviews on their pages.
  
- 4.Monitor all the tourist traffic.
+    8.View their strongest competition.
+  
+  * We will charge a small fee to handle all their payments and to make and feature videos for each company on the site as marketing. 
+  As for the  government, each county will be advertised exclusively on its own page designed by our team, where it can:
+  
+   1.Have all its attractions featured in videos and photos all made by us.
  
- 5.Get feedback from us and the consumers.
+   2.List all resorts and other companies within it.
+ 
+   3.Have updated maps and weather reports.
+ 
+   4.Monitor all the tourist traffic.
+ 
+   5.Get feedback from us and the consumers.
  
  
  
