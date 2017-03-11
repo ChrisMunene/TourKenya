@@ -75,7 +75,7 @@ of the people in our target markets,and the massive potential of the tourism ind
   
     2.Upload photos and descriptions of their services for prospective customers. They will upload their best photo/video to be featured on the homepage. All marketing will be done by us.
  
-    3.We will handle all payments through the site o each company.
+    3.We will handle all payments through the site for each company.
   
     4.Get feedback from the customers or us.
  
