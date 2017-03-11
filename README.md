@@ -49,23 +49,23 @@ of the people in our target markets,and the massive potential of the tourism ind
     
   * Specifications for the booking page:
   
-    1. A user should enter their name and contacts.
+    1.A user should enter their name and contacts.
     
-    2. They should choose the type of tour/vacation they want i.e. places they are interested in visiting.
+    2.They should choose the type of tour/vacation they want i.e. places they are interested in visiting.
     
-    3. They should enter the accommodations and transport companies of their choice.
+    3.They should enter the accommodations and transport companies of their choice.
     
-    4. They should choose the packages from the companies they have selected if any.
+    4.They should choose the packages from the companies they have selected if any.
     
-    5. They should choose their duration of stay.
+    5.They should choose their duration of stay.
     
-    6. They should enter the number and ages of people in their group.
+    6.They should enter the number and ages of people in their group.
     
-    7. After the user has entered all necessary info and submitted their form, a ticket should be printed listing all their choices and the total cost.
+    7.After the user has entered all necessary info and submitted their form, a ticket should be printed listing all their choices and the total cost.
     
-    8. The user should be able to choose a payment method and to pay through the site.
+    8.The user should be able to choose a payment method and to pay through the site.
     
-    9. A printable ticket with all their bookings, payments and balance (if any) should be then sent to their user account. This is the ticket they will use on their travels. Their userID will be printed on the ticket and used to verify their tickets.
+    9.A printable ticket with all their bookings, payments and balance (if any) should be then sent to their user account. This is the ticket they will use on their travels. Their userID will be printed on the ticket and used to verify their tickets.
 
  
   * For the government and respective companies, it is an advertisement site and a platform to reachout to their customers before they even arrive.
