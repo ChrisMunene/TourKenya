@@ -30,7 +30,7 @@ of the people in our target markets,and the massive potential of the tourism ind
   
     8.Book their entire vacation!
   
-    After logging in, they can view and choose all the companies that facilitate their arrival and stay in the country. 
+  * After logging in, they can view and choose all the companies that facilitate their arrival and stay in the country. 
     The site also provides:
     
     1.Maps to the places(GPS)
